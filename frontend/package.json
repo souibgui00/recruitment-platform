@@ -1,0 +1,12 @@
+{
+  "name": "recruitment-platform-frontend",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "next": "14.2.16",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
