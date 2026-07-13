@@ -2,12 +2,14 @@ import shutil
 import uuid
 from pathlib import Path
 
-from fastapi import APIRouter, UploadFile, Depends
+from fastapi import APIRouter, UploadFile, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from shared.database import get_db
 from cv_management.models import CV
 from cv_management.schemas import CVResponse
+from cv_management.text_extraction import extract_text_from_pdf
+
 
 router = APIRouter(prefix="/cv", tags=["cv"])
 
@@ -32,3 +34,14 @@ def upload_cv(file: UploadFile, db: Session = Depends(get_db)):
     db.refresh(cv)
 
     return cv
+
+
+
+@router.get("/{cv_id}/extract-preview")
+def extract_preview(cv_id: uuid.UUID, db: Session = Depends(get_db)):
+    cv = db.get(CV, cv_id)
+    if not cv:
+        raise HTTPException(status_code=404, detail="CV non trouvé")
+
+    text = extract_text_from_pdf(cv.raw_file_url)
+    return {"text_preview": text[:500]}
