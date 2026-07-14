@@ -9,8 +9,7 @@ from shared.database import get_db
 from cv_management.models import CV
 from cv_management.schemas import CVResponse
 from cv_management.text_extraction import extract_text_from_pdf
-from cv_management.llm_extraction import test_llm_connection
-
+from cv_management.llm_extraction import test_llm_connection, extract_cv_data
 
 router = APIRouter(prefix="/cv", tags=["cv"])
 
@@ -50,3 +49,14 @@ def extract_preview(cv_id: uuid.UUID, db: Session = Depends(get_db)):
 @router.get("/test-llm")
 def test_llm():
     return {"response": test_llm_connection()}
+
+
+@router.get("/{cv_id}/extract-structured")
+def extract_structured(cv_id: uuid.UUID, db: Session = Depends(get_db)):
+    cv = db.get(CV, cv_id)
+    if not cv:
+        raise HTTPException(status_code=404, detail="CV non trouvé")
+
+    text = extract_text_from_pdf(cv.raw_file_url)
+    parsed_data = extract_cv_data(text)
+    return parsed_data
