@@ -9,6 +9,7 @@ from shared.database import get_db
 from cv_management.models import CV
 from cv_management.schemas import CVResponse
 from cv_management.text_extraction import extract_text_from_pdf
+from cv_management.llm_extraction import test_llm_connection
 
 
 router = APIRouter(prefix="/cv", tags=["cv"])
@@ -45,3 +46,7 @@ def extract_preview(cv_id: uuid.UUID, db: Session = Depends(get_db)):
 
     text = extract_text_from_pdf(cv.raw_file_url)
     return {"text_preview": text[:500]}
+
+@router.get("/test-llm")
+def test_llm():
+    return {"response": test_llm_connection()}
