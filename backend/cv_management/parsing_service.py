@@ -5,6 +5,8 @@ from cv_management.text_extraction import extract_text_from_pdf
 from cv_management.llm_extraction import extract_cv_data
 from cv_management.date_parsing import parse_flexible_date
 from cv_management.skill_normalization import normalize_skill
+from cv_management.models import CVEmbedding
+from cv_management.embedding_generation import generate_embedding
 
 
 def parse_cv(cv: CV, db: Session) -> CV:
@@ -52,7 +54,13 @@ def parse_cv(cv: CV, db: Session) -> CV:
             source="EXPLICIT",
         )
         db.add(cv_skill)
-
+    embedding_vector = generate_embedding(raw_text)
+    cv_embedding = CVEmbedding(
+        cv_id=cv.id,
+        vector=embedding_vector,
+        model_name="intfloat/multilingual-e5-large",
+    )
+    db.add(cv_embedding)
     cv.status = "PARSED"
     db.commit()
     db.refresh(cv)
