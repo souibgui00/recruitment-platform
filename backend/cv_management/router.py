@@ -10,6 +10,7 @@ from cv_management.models import CV
 from cv_management.schemas import CVResponse
 from cv_management.text_extraction import extract_text_from_pdf
 from cv_management.llm_extraction import test_llm_connection, extract_cv_data
+from cv_management.parsing_service import parse_cv
 
 router = APIRouter(prefix="/cv", tags=["cv"])
 
@@ -60,3 +61,13 @@ def extract_structured(cv_id: uuid.UUID, db: Session = Depends(get_db)):
     text = extract_text_from_pdf(cv.raw_file_url)
     parsed_data = extract_cv_data(text)
     return parsed_data
+
+
+@router.post("/{cv_id}/parse")
+def parse_cv_endpoint(cv_id: uuid.UUID, db: Session = Depends(get_db)):
+    cv = db.get(CV, cv_id)
+    if not cv:
+        raise HTTPException(status_code=404, detail="CV non trouvé")
+
+    parse_cv(cv, db)
+    return {"status": "success", "cv_id": str(cv.id)}
