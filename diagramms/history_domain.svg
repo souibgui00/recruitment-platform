@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="395px" preserveAspectRatio="none" style="width:384px;height:395px;" version="1.1" viewBox="0 0 384 395" width="384px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="370" x="2" y="16.708">Historique et audit — Modèle du domaine</text><!--MD5=[32d7df8e8cb6c45983b7cd64ec5e8d3b]
+class AuditDecision--><rect fill="#FEFECE" height="86.4141" id="AuditDecision" style="stroke: #A80036; stroke-width: 1.5;" width="133" x="114.5" y="297.9531"/><ellipse cx="136.7" cy="313.9531" fill="#EB937F" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M140.8094,319.9531 L133.0906,319.9531 L133.0906,307.5625 L140.8094,307.5625 L140.8094,309.7188 L135.5438,309.7188 L135.5438,312.3906 L140.3094,312.3906 L140.3094,314.5469 L135.5438,314.5469 L135.5438,317.7969 L140.8094,317.7969 L140.8094,319.9531 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="85" x="152.3" y="318.1074">AuditDecision</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="115.5" x2="246.5" y1="329.9531" y2="329.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="120.5" y="344.1636">NOT_APPLIED</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121" x="120.5" y="356.9683">PENDING_VALIDATION</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="120.5" y="369.7729">APPLIED</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="115.5" x2="246.5" y1="376.3672" y2="376.3672"/><!--MD5=[639fd5ac9d28f676383b6ca2f1944295]
+class AuditEntry--><rect fill="#FEFECE" height="208.7578" id="AuditEntry" style="stroke: #A80036; stroke-width: 1.5;" width="247" x="57.5" y="28.9531"/><ellipse cx="122.25" cy="54.9063" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M125.2188,60.5469 Q124.6406,60.8438 124,60.9844 Q123.3594,61.1406 122.6563,61.1406 Q120.1563,61.1406 118.8281,59.5 Q117.5156,57.8438 117.5156,54.7188 Q117.5156,51.5938 118.8281,49.9375 Q120.1563,48.2813 122.6563,48.2813 Q123.3594,48.2813 124,48.4375 Q124.6563,48.5938 125.2188,48.8906 L125.2188,51.6094 Q124.5938,51.0313 124,50.7656 Q123.4063,50.4844 122.7813,50.4844 Q121.4375,50.4844 120.75,51.5625 Q120.0625,52.625 120.0625,54.7188 Q120.0625,56.8125 120.75,57.8906 Q121.4375,58.9531 122.7813,58.9531 Q123.4063,58.9531 124,58.6875 Q124.5938,58.4063 125.2188,57.8281 L125.2188,60.5469 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="113" x="140.75" y="45.0918">«Aggregate Root»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="80" x="157.25" y="59.0605">«Immutable»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="64" x="165.25" y="73.0293">AuditEntry</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="58.5" x2="303.5" y1="80.8594" y2="80.8594"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="63.5" y="95.0698">-id : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="63.5" y="107.8745">-userId : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="65" x="63.5" y="120.6792">-cvId : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="63.5" y="133.4839">-jobOfferId : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="88" x="63.5" y="146.2886">-matchId : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="63.5" y="159.0933">-applicationId : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="145" x="63.5" y="171.8979">-compatibilityScore : float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="139" x="63.5" y="184.7026">-decision : AuditDecision</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="198" x="63.5" y="197.5073">-scoreBreakdownSnapshot : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="124" x="63.5" y="210.312">-createdAt : DateTime</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="58.5" x2="303.5" y1="216.9063" y2="216.9063"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="63.5" y="231.1167">+toDisplayableRecord() : AuditRecordDTO</text><!--MD5=[dd2392eabed103da190f3bb527019f62]
+link AuditEntry to AuditDecision--><path d="M181,238.1031 C181,259.2531 181,280.3531 181,297.8131 " fill="none" id="AuditEntry-AuditDecision" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[26bed4d10d973aa03fda73bd6a37ff92]
+@startuml history_domain
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam class {
+  BackgroundColor #FEFECE
+  BorderColor #A80036
+  ArrowColor #A80036
+}
+
+title Historique et audit — Modèle du domaine
+
+enum AuditDecision {
+  NOT_APPLIED
+  PENDING_VALIDATION
+  APPLIED
+}
+
+class AuditEntry <<Aggregate Root>> <<Immutable>> {
+  - id : UUID
+  - userId : UUID
+  - cvId : UUID
+  - jobOfferId : UUID
+  - matchId : UUID
+  - applicationId : UUID
+  - compatibilityScore : float
+  - decision : AuditDecision
+  - scoreBreakdownSnapshot : string
+  - createdAt : DateTime
+  - -
+  + toDisplayableRecord() : AuditRecordDTO
+}
+
+AuditEntry - - AuditDecision
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.10+7-Ubuntu-124.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

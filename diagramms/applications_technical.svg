@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="477px" preserveAspectRatio="none" style="width:1277px;height:477px;" version="1.1" viewBox="0 0 1277 477" width="1277px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="426" x="429" y="16.708">Gestion des candidatures — Services techniques</text><!--MD5=[39c7663821d7770dfc785ce505c652c7]
+class IApplicationChannel--><rect fill="#FEFECE" height="66.7422" id="IApplicationChannel" style="stroke: #A80036; stroke-width: 1.5;" width="444" x="485" y="217.4531"/><ellipse cx="640.75" cy="236.4219" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M636.6719,232.1875 L636.6719,230.0313 L644.0625,230.0313 L644.0625,232.1875 L641.5938,232.1875 L641.5938,240.2656 L644.0625,240.2656 L644.0625,242.4219 L636.6719,242.4219 L636.6719,240.2656 L639.1406,240.2656 L639.1406,232.1875 L636.6719,232.1875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="703.25" y="233.5918">«port»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="124" x="661.25" y="247.5605">IApplicationChannel</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="486" x2="928" y1="255.3906" y2="255.3906"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="486" x2="928" y1="263.3906" y2="263.3906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="432" x="491" y="277.6011">+submit(application: Application, cv: CV, offer: JobOffer) : SubmissionResult</text><!--MD5=[c3e5116f1f562a83d107f5317f46c5ca]
+class LinkedInApplicationChannel--><rect fill="#FEFECE" height="60.8047" id="LinkedInApplicationChannel" style="stroke: #A80036; stroke-width: 1.5;" width="444" x="6" y="389.4531"/><ellipse cx="138.25" cy="405.4531" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M141.2188,411.0938 Q140.6406,411.3906 140,411.5313 Q139.3594,411.6875 138.6563,411.6875 Q136.1563,411.6875 134.8281,410.0469 Q133.5156,408.3906 133.5156,405.2656 Q133.5156,402.1406 134.8281,400.4844 Q136.1563,398.8281 138.6563,398.8281 Q139.3594,398.8281 140,398.9844 Q140.6563,399.1406 141.2188,399.4375 L141.2188,402.1563 Q140.5938,401.5781 140,401.3125 Q139.4063,401.0313 138.7813,401.0313 Q137.4375,401.0313 136.75,402.1094 Q136.0625,403.1719 136.0625,405.2656 Q136.0625,407.3594 136.75,408.4375 Q137.4375,409.5 138.7813,409.5 Q139.4063,409.5 140,409.2344 Q140.5938,408.9531 141.2188,408.375 L141.2188,411.0938 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="171" x="158.75" y="409.6074">LinkedInApplicationChannel</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="449" y1="421.4531" y2="421.4531"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="449" y1="429.4531" y2="429.4531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="432" x="12" y="443.6636">+submit(application: Application, cv: CV, offer: JobOffer) : SubmissionResult</text><!--MD5=[bd986239a0649657d1f67e4c579a9478]
+class EmailApplicationChannel--><rect fill="#FEFECE" height="60.8047" id="EmailApplicationChannel" style="stroke: #A80036; stroke-width: 1.5;" width="444" x="485" y="389.4531"/><ellipse cx="626.25" cy="405.4531" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M629.2188,411.0938 Q628.6406,411.3906 628,411.5313 Q627.3594,411.6875 626.6563,411.6875 Q624.1563,411.6875 622.8281,410.0469 Q621.5156,408.3906 621.5156,405.2656 Q621.5156,402.1406 622.8281,400.4844 Q624.1563,398.8281 626.6563,398.8281 Q627.3594,398.8281 628,398.9844 Q628.6563,399.1406 629.2188,399.4375 L629.2188,402.1563 Q628.5938,401.5781 628,401.3125 Q627.4063,401.0313 626.7813,401.0313 Q625.4375,401.0313 624.75,402.1094 Q624.0625,403.1719 624.0625,405.2656 Q624.0625,407.3594 624.75,408.4375 Q625.4375,409.5 626.7813,409.5 Q627.4063,409.5 628,409.2344 Q628.5938,408.9531 629.2188,408.375 L629.2188,411.0938 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="153" x="646.75" y="409.6074">EmailApplicationChannel</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="486" x2="928" y1="421.4531" y2="421.4531"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="486" x2="928" y1="429.4531" y2="429.4531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="432" x="491" y="443.6636">+submit(application: Application, cv: CV, offer: JobOffer) : SubmissionResult</text><!--MD5=[3a991f42813661f0b4622bead86da12e]
+class SubmissionResult--><rect fill="#FEFECE" height="92.3516" id="SubmissionResult" style="stroke: #A80036; stroke-width: 1.5;" width="150" x="964" y="373.9531"/><ellipse cx="982.6" cy="392.9219" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M985.5688,398.5625 Q984.9906,398.8594 984.35,399 Q983.7094,399.1563 983.0063,399.1563 Q980.5063,399.1563 979.1781,397.5156 Q977.8656,395.8594 977.8656,392.7344 Q977.8656,389.6094 979.1781,387.9531 Q980.5063,386.2969 983.0063,386.2969 Q983.7094,386.2969 984.35,386.4531 Q985.0063,386.6094 985.5688,386.9063 L985.5688,389.625 Q984.9438,389.0469 984.35,388.7813 Q983.7563,388.5 983.1313,388.5 Q981.7875,388.5 981.1,389.5781 Q980.4125,390.6406 980.4125,392.7344 Q980.4125,394.8281 981.1,395.9063 Q981.7875,396.9688 983.1313,396.9688 Q983.7563,396.9688 984.35,396.7031 Q984.9438,396.4219 985.5688,395.8438 L985.5688,398.5625 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="92" x="1006.4" y="390.0918">«Value Object»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="110" x="997.4" y="404.0605">SubmissionResult</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="965" x2="1113" y1="411.8906" y2="411.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108" x="970" y="426.1011">-success : boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="129" x="970" y="438.9058">-errorMessage : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="970" y="451.7104">-submittedAt : DateTime</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="965" x2="1113" y1="458.3047" y2="458.3047"/><!--MD5=[40616486a305134c9a8928e73f58c3e2]
+class IApplicationRepository--><rect fill="#FEFECE" height="92.3516" id="IApplicationRepository" style="stroke: #A80036; stroke-width: 1.5;" width="302" x="964" y="204.9531"/><ellipse cx="1041.25" cy="223.9219" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1037.1719,219.6875 L1037.1719,217.5313 L1044.5625,217.5313 L1044.5625,219.6875 L1042.0938,219.6875 L1042.0938,227.7656 L1044.5625,227.7656 L1044.5625,229.9219 L1037.1719,229.9219 L1037.1719,227.7656 L1039.6406,227.7656 L1039.6406,219.6875 L1037.1719,219.6875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="1111.25" y="221.0918">«port»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="139" x="1061.75" y="235.0605">IApplicationRepository</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="965" x2="1265" y1="242.8906" y2="242.8906"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="965" x2="1265" y1="250.8906" y2="250.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="209" x="970" y="265.1011">+save(application: Application) : void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="290" x="970" y="277.9058">+findPendingValidation(userId: UUID) : Application[]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="180" x="970" y="290.7104">+findById(id: UUID) : Application</text><!--MD5=[03a06cb69a7b111766c2fdb081cbdc6d]
+class ApplicationOrchestrator--><rect fill="#FEFECE" height="99.2188" id="ApplicationOrchestrator" style="stroke: #A80036; stroke-width: 1.5;" width="448" x="769" y="28.9531"/><ellipse cx="914.25" cy="44.9531" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M917.2188,50.5938 Q916.6406,50.8906 916,51.0313 Q915.3594,51.1875 914.6563,51.1875 Q912.1563,51.1875 910.8281,49.5469 Q909.5156,47.8906 909.5156,44.7656 Q909.5156,41.6406 910.8281,39.9844 Q912.1563,38.3281 914.6563,38.3281 Q915.3594,38.3281 916,38.4844 Q916.6563,38.6406 917.2188,38.9375 L917.2188,41.6563 Q916.5938,41.0781 916,40.8125 Q915.4063,40.5313 914.7813,40.5313 Q913.4375,40.5313 912.75,41.6094 Q912.0625,42.6719 912.0625,44.7656 Q912.0625,46.8594 912.75,47.9375 Q913.4375,49 914.7813,49 Q915.4063,49 916,48.7344 Q916.5938,48.4531 917.2188,47.875 L917.2188,50.5938 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="149" x="934.75" y="49.1074">ApplicationOrchestrator</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="770" x2="1216" y1="60.9531" y2="60.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="185" x="775" y="75.1636">-channels : IApplicationChannel[]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="198" x="775" y="87.9683">-repository : IApplicationRepository</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="770" x2="1216" y1="94.5625" y2="94.5625"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="436" x="775" y="108.7729">+processMatch(match: Match, settings: UserAutoApplySettings) : Application</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="429" x="775" y="121.5776">-shouldAutoApply(match: Match, settings: UserAutoApplySettings) : boolean</text><!--MD5=[d58f0394d204ddc9ce595cc4fcf73da6]
+reverse link IApplicationChannel to LinkedInApplicationChannel--><path d="M594.51,291.1731 C508.32,321.2231 391.24,362.0431 312.83,389.3831 " fill="none" id="IApplicationChannel&lt;-LinkedInApplicationChannel" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="592.32,284.5231,613.51,284.5531,596.93,297.7431,592.32,284.5231" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[cd7d4c7c882afb3e1e76a3a4e0fa68d5]
+reverse link IApplicationChannel to EmailApplicationChannel--><path d="M707,304.6031 C707,332.5331 707,365.8031 707,389.2431 " fill="none" id="IApplicationChannel&lt;-EmailApplicationChannel" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="700,304.5531,707,284.5531,714,304.5531,700,304.5531" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[bd686ffb675d8cbc7e7ae9436d8a291f]
+link ApplicationOrchestrator to IApplicationChannel--><path d="M911.43,128.0831 C865.07,155.7231 808.08,189.6931 766.06,214.7431 " fill="none" id="ApplicationOrchestrator-&gt;IApplicationChannel" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="761.53,217.4431,771.31,216.2809,765.8275,214.8875,767.221,209.4049,761.53,217.4431" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37" x="860" y="171.02">utilise</text><!--MD5=[4e4a84e4775af8890ea57a46a2e88ed8]
+link ApplicationOrchestrator to IApplicationRepository--><path d="M1027.96,128.3131 C1044.2,151.0031 1063.47,177.9431 1079.75,200.6831 " fill="none" id="ApplicationOrchestrator-&gt;IApplicationRepository" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1082.75,204.8831,1080.7706,195.2352,1079.8425,200.8154,1074.2623,199.8873,1082.75,204.8831" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37" x="1062" y="171.02">utilise</text><!--MD5=[68afddc63bb6584d1a843a694f3d4937]
+link IApplicationChannel to SubmissionResult--><path d="M771.8,284.5531 C825.4,311.5131 901.75,349.9131 959.12,378.7731 " fill="none" id="IApplicationChannel-&gt;SubmissionResult" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="963.92,381.1831,957.6881,373.5566,959.4565,378.93,954.0831,380.6983,963.92,381.1831" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="45" x="884" y="340.02">produit</text><!--MD5=[00d2fc6fe54a223cc2c9b87611e5a841]
+@startuml applications_technical
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam class {
+  BackgroundColor #FEFECE
+  BorderColor #A80036
+  ArrowColor #A80036
+}
+
+title Gestion des candidatures — Services techniques
+
+interface IApplicationChannel <<port>> {
+  + submit(application: Application, cv: CV, offer: JobOffer) : SubmissionResult
+}
+
+class LinkedInApplicationChannel {
+  + submit(application: Application, cv: CV, offer: JobOffer) : SubmissionResult
+}
+
+class EmailApplicationChannel {
+  + submit(application: Application, cv: CV, offer: JobOffer) : SubmissionResult
+}
+
+class SubmissionResult <<Value Object>> {
+  - success : boolean
+  - errorMessage : string
+  - submittedAt : DateTime
+}
+
+interface IApplicationRepository <<port>> {
+  + save(application: Application) : void
+  + findPendingValidation(userId: UUID) : Application[]
+  + findById(id: UUID) : Application
+}
+
+class ApplicationOrchestrator {
+  - channels : IApplicationChannel[]
+  - repository : IApplicationRepository
+  - -
+  + processMatch(match: Match, settings: UserAutoApplySettings) : Application
+  - shouldAutoApply(match: Match, settings: UserAutoApplySettings) : boolean
+}
+
+IApplicationChannel <|.. LinkedInApplicationChannel
+IApplicationChannel <|.. EmailApplicationChannel
+
+ApplicationOrchestrator - -> IApplicationChannel : utilise
+ApplicationOrchestrator - -> IApplicationRepository : utilise
+IApplicationChannel ..> SubmissionResult : produit
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.10+7-Ubuntu-124.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

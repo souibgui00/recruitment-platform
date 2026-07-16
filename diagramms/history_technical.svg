@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="452px" preserveAspectRatio="none" style="width:414px;height:452px;" version="1.1" viewBox="0 0 414 452" width="414px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="370" x="25.5" y="16.708">Historique et audit — Services techniques</text><!--MD5=[6821009ad841a7a275b764ac240f44de]
+class IAuditRepository--><rect fill="#FEFECE" height="92.3516" id="IAuditRepository" style="stroke: #A80036; stroke-width: 1.5;" width="361" x="24" y="179.9531"/><ellipse cx="149.25" cy="198.9219" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M145.1719,194.6875 L145.1719,192.5313 L152.5625,192.5313 L152.5625,194.6875 L150.0938,194.6875 L150.0938,202.7656 L152.5625,202.7656 L152.5625,204.9219 L145.1719,204.9219 L145.1719,202.7656 L147.6406,202.7656 L147.6406,194.6875 L145.1719,194.6875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="200.75" y="196.0918">«port»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="102" x="169.75" y="210.0605">IAuditRepository</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="25" x2="384" y1="217.8906" y2="217.8906"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="25" x2="384" y1="225.8906" y2="225.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="30" y="240.1011">+save(entry: AuditEntry) : void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="349" x="30" y="252.9058">+findByUserId(userId: UUID, filters: AuditFilters) : AuditEntry[]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="210" x="30" y="265.7104">+findByCvId(cvId: UUID) : AuditEntry[]</text><!--MD5=[80384a3284205ea66e7115b3efda2757]
+class AuditFilters--><rect fill="#FEFECE" height="92.3516" id="AuditFilters" style="stroke: #A80036; stroke-width: 1.5;" width="151" x="129" y="348.9531"/><ellipse cx="157.95" cy="367.9219" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M160.9188,373.5625 Q160.3406,373.8594 159.7,374 Q159.0594,374.1563 158.3563,374.1563 Q155.8563,374.1563 154.5281,372.5156 Q153.2156,370.8594 153.2156,367.7344 Q153.2156,364.6094 154.5281,362.9531 Q155.8563,361.2969 158.3563,361.2969 Q159.0594,361.2969 159.7,361.4531 Q160.3563,361.6094 160.9188,361.9063 L160.9188,364.625 Q160.2938,364.0469 159.7,363.7813 Q159.1063,363.5 158.4813,363.5 Q157.1375,363.5 156.45,364.5781 Q155.7625,365.6406 155.7625,367.7344 Q155.7625,369.8281 156.45,370.9063 Q157.1375,371.9688 158.4813,371.9688 Q159.1063,371.9688 159.7,371.7031 Q160.2938,371.4219 160.9188,370.8438 L160.9188,373.5625 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="92" x="173.05" y="365.0918">«Value Object»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="184.05" y="379.0605">AuditFilters</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="130" x2="279" y1="386.8906" y2="386.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="96" x="135" y="401.1011">-dateFrom : Date</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="135" y="413.9058">-dateTo : Date</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="139" x="135" y="426.7104">-decision : AuditDecision</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="130" x2="279" y1="433.3047" y2="433.3047"/><!--MD5=[1b645077b2d1aa56d1be014c89ba7260]
+class AuditService--><rect fill="#FEFECE" height="73.6094" id="AuditService" style="stroke: #A80036; stroke-width: 1.5;" width="397" x="6" y="28.9531"/><ellipse cx="161.75" cy="44.9531" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M164.7188,50.5938 Q164.1406,50.8906 163.5,51.0313 Q162.8594,51.1875 162.1563,51.1875 Q159.6563,51.1875 158.3281,49.5469 Q157.0156,47.8906 157.0156,44.7656 Q157.0156,41.6406 158.3281,39.9844 Q159.6563,38.3281 162.1563,38.3281 Q162.8594,38.3281 163.5,38.4844 Q164.1563,38.6406 164.7188,38.9375 L164.7188,41.6563 Q164.0938,41.0781 163.5,40.8125 Q162.9063,40.5313 162.2813,40.5313 Q160.9375,40.5313 160.25,41.6094 Q159.5625,42.6719 159.5625,44.7656 Q159.5625,46.8594 160.25,47.9375 Q160.9375,49 162.2813,49 Q162.9063,49 163.5,48.7344 Q164.0938,48.4531 164.7188,47.875 L164.7188,50.5938 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="77" x="182.25" y="49.1074">AuditService</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="402" y1="60.9531" y2="60.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="12" y="75.1636">-repository : IAuditRepository</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="7" x2="402" y1="81.7578" y2="81.7578"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="385" x="12" y="95.9683">+recordDecision(match: Match, application: Application) : AuditEntry</text><!--MD5=[a749eff89bdf3a35574fcb42f2abbb02]
+link AuditService to IAuditRepository--><path d="M204.5,103.2031 C204.5,124.3731 204.5,151.4131 204.5,174.6331 " fill="none" id="AuditService-&gt;IAuditRepository" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="204.5,179.8331,208.5,170.8331,204.5,174.8331,200.5,170.8331,204.5,179.8331" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37" x="205.5" y="146.02">utilise</text><!--MD5=[ed9edc35c752e9f046e1097be851f25e]
+link IAuditRepository to AuditFilters--><path d="M204.5,272.1431 C204.5,294.2331 204.5,320.8931 204.5,343.6331 " fill="none" id="IAuditRepository-&gt;AuditFilters" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="204.5,348.7231,208.5,339.7231,204.5,343.7231,200.5,339.7231,204.5,348.7231" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37" x="205.5" y="315.02">utilise</text><!--MD5=[290b80f23d0fc9ef1e7e23d70e985877]
+@startuml history_technical
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam class {
+  BackgroundColor #FEFECE
+  BorderColor #A80036
+  ArrowColor #A80036
+}
+
+title Historique et audit — Services techniques
+
+interface IAuditRepository <<port>> {
+  + save(entry: AuditEntry) : void
+  + findByUserId(userId: UUID, filters: AuditFilters) : AuditEntry[]
+  + findByCvId(cvId: UUID) : AuditEntry[]
+}
+
+class AuditFilters <<Value Object>> {
+  - dateFrom : Date
+  - dateTo : Date
+  - decision : AuditDecision
+}
+
+class AuditService {
+  - repository : IAuditRepository
+  - -
+  + recordDecision(match: Match, application: Application) : AuditEntry
+}
+
+AuditService - -> IAuditRepository : utilise
+IAuditRepository ..> AuditFilters : utilise
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.10+7-Ubuntu-124.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

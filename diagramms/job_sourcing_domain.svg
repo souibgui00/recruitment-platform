@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="815px" preserveAspectRatio="none" style="width:700px;height:815px;" version="1.1" viewBox="0 0 700 815" width="700px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="374" x="166.5" y="16.708">Sourcing des offres — Modèle du domaine</text><!--MD5=[58d116c28b8de1fad0c7eb2090298c08]
+class ContractType--><rect fill="#FEFECE" height="99.2188" id="ContractType" style="stroke: #A80036; stroke-width: 1.5;" width="115" x="6" y="354.4531"/><ellipse cx="21" cy="370.4531" fill="#EB937F" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M25.1094,376.4531 L17.3906,376.4531 L17.3906,364.0625 L25.1094,364.0625 L25.1094,366.2188 L19.8438,366.2188 L19.8438,368.8906 L24.6094,368.8906 L24.6094,371.0469 L19.8438,371.0469 L19.8438,374.2969 L25.1094,374.2969 L25.1094,376.4531 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="83" x="35" y="374.6074">ContractType</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="120" y1="386.4531" y2="386.4531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="19" x="12" y="400.6636">CDI</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="24" x="12" y="413.4683">CDD</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="12" y="426.2729">STAGE</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="63" x="12" y="439.0776">FREELANCE</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="120" y1="445.6719" y2="445.6719"/><!--MD5=[dc247fd64d97b8a197ca06734f8e0a82]
+class OfferStatus--><rect fill="#FEFECE" height="86.4141" id="OfferStatus" style="stroke: #A80036; stroke-width: 1.5;" width="103" x="156" y="360.9531"/><ellipse cx="171" cy="376.9531" fill="#EB937F" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M175.1094,382.9531 L167.3906,382.9531 L167.3906,370.5625 L175.1094,370.5625 L175.1094,372.7188 L169.8438,372.7188 L169.8438,375.3906 L174.6094,375.3906 L174.6094,377.5469 L169.8438,377.5469 L169.8438,380.7969 L175.1094,380.7969 L175.1094,382.9531 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="71" x="185" y="381.1074">OfferStatus</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="157" x2="258" y1="392.9531" y2="392.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="24" x="162" y="407.1636">NEW</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="59" x="162" y="419.9683">ANALYZED</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="162" y="432.7729">ARCHIVED</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="157" x2="258" y1="439.3672" y2="439.3672"/><!--MD5=[3adb7ba4229627bf258f26ef0f1828cf]
+class SourceType--><rect fill="#FEFECE" height="73.6094" id="SourceType" style="stroke: #A80036; stroke-width: 1.5;" width="105" x="408" y="551.9531"/><ellipse cx="423" cy="567.9531" fill="#EB937F" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M427.1094,573.9531 L419.3906,573.9531 L419.3906,561.5625 L427.1094,561.5625 L427.1094,563.7188 L421.8438,563.7188 L421.8438,566.3906 L426.6094,566.3906 L426.6094,568.5469 L421.8438,568.5469 L421.8438,571.7969 L427.1094,571.7969 L427.1094,573.9531 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="73" x="437" y="572.1074">SourceType</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="409" x2="512" y1="583.9531" y2="583.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71" x="414" y="598.1636">OFFICIAL_API</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="414" y="610.9683">SCRAPER</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="409" x2="512" y1="617.5625" y2="617.5625"/><!--MD5=[a9c2269f5f9b005ec48c40f3cab21c93]
+class RunStatus--><rect fill="#FEFECE" height="86.4141" id="RunStatus" style="stroke: #A80036; stroke-width: 1.5;" width="97" x="570" y="717.9531"/><ellipse cx="585" cy="733.9531" fill="#EB937F" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M589.1094,739.9531 L581.3906,739.9531 L581.3906,727.5625 L589.1094,727.5625 L589.1094,729.7188 L583.8438,729.7188 L583.8438,732.3906 L588.6094,732.3906 L588.6094,734.5469 L583.8438,734.5469 L583.8438,737.7969 L589.1094,737.7969 L589.1094,739.9531 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="65" x="599" y="738.1074">RunStatus</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="571" x2="666" y1="749.9531" y2="749.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="576" y="764.1636">SUCCESS</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="576" y="776.9683">FAILED</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="44" x="576" y="789.7729">PARTIAL</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="571" x2="666" y1="796.3672" y2="796.3672"/><!--MD5=[72189e7a27001b4df66b6ea620c867a5]
+class JobOffer--><rect fill="#FEFECE" height="258.8125" id="JobOffer" style="stroke: #A80036; stroke-width: 1.5;" width="245" x="166" y="28.9531"/><ellipse cx="229.75" cy="47.9219" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M232.7188,53.5625 Q232.1406,53.8594 231.5,54 Q230.8594,54.1563 230.1563,54.1563 Q227.6563,54.1563 226.3281,52.5156 Q225.0156,50.8594 225.0156,47.7344 Q225.0156,44.6094 226.3281,42.9531 Q227.6563,41.2969 230.1563,41.2969 Q230.8594,41.2969 231.5,41.4531 Q232.1563,41.6094 232.7188,41.9063 L232.7188,44.625 Q232.0938,44.0469 231.5,43.7813 Q230.9063,43.5 230.2813,43.5 Q228.9375,43.5 228.25,44.5781 Q227.5625,45.6406 227.5625,47.7344 Q227.5625,49.8281 228.25,50.9063 Q228.9375,51.9688 230.2813,51.9688 Q230.9063,51.9688 231.5,51.7031 Q232.0938,51.4219 232.7188,50.8438 L232.7188,53.5625 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="113" x="248.25" y="45.0918">«Aggregate Root»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="280.25" y="59.0605">JobOffer</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="167" x2="410" y1="66.8906" y2="66.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="172" y="81.1011">-id : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92" x="172" y="93.9058">-sourceId : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="172" y="106.7104">-sourceUrl : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108" x="172" y="119.5151">-fingerprint : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70" x="172" y="132.3198">-title : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="100" x="172" y="145.1245">-company : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="172" y="157.9292">-location : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="172" y="170.7339">-description : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="135" x="172" y="183.5386">-requiredSkills : string[]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="164" x="172" y="196.3433">-contractType : ContractType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92" x="172" y="209.1479">-postedAt : Date</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="131" x="172" y="221.9526">-collectedAt : DateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="118" x="172" y="234.7573">-status : OfferStatus</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="167" x2="410" y1="241.3516" y2="241.3516"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="144" x="172" y="255.562">+markAsAnalyzed() : void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="172" y="268.3667">+archive() : void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="233" x="172" y="281.1714">+isDuplicateOf(other: JobOffer) : boolean</text><!--MD5=[5ae82acb977d500e5f98561828ea8583]
+class JobOfferEmbedding--><rect fill="#FEFECE" height="86.4141" id="JobOfferEmbedding" style="stroke: #A80036; stroke-width: 1.5;" width="151" x="294" y="360.9531"/><ellipse cx="309" cy="376.9531" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M311.9688,382.5938 Q311.3906,382.8906 310.75,383.0313 Q310.1094,383.1875 309.4063,383.1875 Q306.9063,383.1875 305.5781,381.5469 Q304.2656,379.8906 304.2656,376.7656 Q304.2656,373.6406 305.5781,371.9844 Q306.9063,370.3281 309.4063,370.3281 Q310.1094,370.3281 310.75,370.4844 Q311.4063,370.6406 311.9688,370.9375 L311.9688,373.6563 Q311.3438,373.0781 310.75,372.8125 Q310.1563,372.5313 309.5313,372.5313 Q308.1875,372.5313 307.5,373.6094 Q306.8125,374.6719 306.8125,376.7656 Q306.8125,378.8594 307.5,379.9375 Q308.1875,381 309.5313,381 Q310.1563,381 310.75,380.7344 Q311.3438,380.4531 311.9688,379.875 L311.9688,382.5938 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="119" x="323" y="381.1074">JobOfferEmbedding</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="295" x2="444" y1="392.9531" y2="392.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84" x="300" y="407.1636">-vector : float[]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="117" x="300" y="419.9683">-modelName : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="124" x="300" y="432.7729">-createdAt : DateTime</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="295" x2="444" y1="439.3672" y2="439.3672"/><!--MD5=[f27e3fd98b9aa6eeacd890f521675ff3]
+class JobSource--><rect fill="#FEFECE" height="112.0234" id="JobSource" style="stroke: #A80036; stroke-width: 1.5;" width="119" x="480" y="347.9531"/><ellipse cx="505.8" cy="363.9531" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M508.7688,369.5938 Q508.1906,369.8906 507.55,370.0313 Q506.9094,370.1875 506.2063,370.1875 Q503.7063,370.1875 502.3781,368.5469 Q501.0656,366.8906 501.0656,363.7656 Q501.0656,360.6406 502.3781,358.9844 Q503.7063,357.3281 506.2063,357.3281 Q506.9094,357.3281 507.55,357.4844 Q508.2063,357.6406 508.7688,357.9375 L508.7688,360.6563 Q508.1438,360.0781 507.55,359.8125 Q506.9563,359.5313 506.3313,359.5313 Q504.9875,359.5313 504.3,360.6094 Q503.6125,361.6719 503.6125,363.7656 Q503.6125,365.8594 504.3,366.9375 Q504.9875,368 506.3313,368 Q506.9563,368 507.55,367.7344 Q508.1438,367.4531 508.7688,366.875 L508.7688,369.5938 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="522.2" y="368.1074">JobSource</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="481" x2="598" y1="379.9531" y2="379.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="486" y="394.1636">-id : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="486" y="406.9683">-name : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="107" x="486" y="419.7729">-type : SourceType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="486" y="432.5776">-baseUrl : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="486" y="445.3823">-isActive : boolean</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="481" x2="598" y1="451.9766" y2="451.9766"/><!--MD5=[0b57794803695ae21bb672564bf1037e]
+class CollectionRun--><rect fill="#FEFECE" height="137.6328" id="CollectionRun" style="stroke: #A80036; stroke-width: 1.5;" width="141" x="548" y="519.9531"/><ellipse cx="573.8" cy="535.9531" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M576.7688,541.5938 Q576.1906,541.8906 575.55,542.0313 Q574.9094,542.1875 574.2063,542.1875 Q571.7063,542.1875 570.3781,540.5469 Q569.0656,538.8906 569.0656,535.7656 Q569.0656,532.6406 570.3781,530.9844 Q571.7063,529.3281 574.2063,529.3281 Q574.9094,529.3281 575.55,529.4844 Q576.2063,529.6406 576.7688,529.9375 L576.7688,532.6563 Q576.1438,532.0781 575.55,531.8125 Q574.9563,531.5313 574.3313,531.5313 Q572.9875,531.5313 572.3,532.6094 Q571.6125,533.6719 571.6125,535.7656 Q571.6125,537.8594 572.3,538.9375 Q572.9875,540 574.3313,540 Q574.9563,540 575.55,539.7344 Q576.1438,539.4531 576.7688,538.875 L576.7688,541.5938 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="85" x="590.2" y="540.1074">CollectionRun</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="549" x2="688" y1="551.9531" y2="551.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="554" y="566.1636">-id : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92" x="554" y="578.9683">-sourceId : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="122" x="554" y="591.7729">-startedAt : DateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="126" x="554" y="604.5776">-finishedAt : DateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="116" x="554" y="617.3823">-offersCollected : int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="554" y="630.187">-status : RunStatus</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="129" x="554" y="642.9917">-errorMessage : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="549" x2="688" y1="649.5859" y2="649.5859"/><!--MD5=[d3dee49a458cfcb83848bc89d692f246]
+link JobOffer to JobSource--><path d="M411.06,278.3531 C436.07,302.6131 461.24,327.0331 482.59,347.7431 " fill="none" id="JobOffer-JobSource" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="418.8103" y="281.9274">0..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="467.1666" y="337.052">1</text><!--MD5=[cac0904fe893bcc5a10303560b06d606]
+reverse link JobOffer to JobOfferEmbedding--><path d="M335.46,300.6131 C342.76,322.5731 349.78,343.6631 355.52,360.9331 " fill="none" id="JobOffer&lt;-JobOfferEmbedding" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="331.25,287.9731,329.3551,294.9308,335.0487,299.356,336.9436,292.3983,331.25,287.9731" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="325.4902" y="307.9707">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="24" x="327.3794" y="349.926">0..1</text><!--MD5=[c53db5e245a81abacedbdd1e06649fa8]
+link JobSource to CollectionRun--><path d="M563.42,460.3531 C571.5,479.0831 580.62,500.2131 589.08,519.8031 " fill="none" id="JobSource-CollectionRun" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="557.8477" y="480.2145">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="561.8601" y="508.9913">0..*</text><!--MD5=[8ef24662431ebec78759e9f1d7aff22e]
+link JobOffer to ContractType--><path d="M169.74,287.9731 C147.87,311.6431 126.32,334.9631 108.41,354.3531 " fill="none" id="JobOffer-ContractType" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4567ecadee1d9f88c4c9e86a447d9b4f]
+link JobOffer to OfferStatus--><path d="M245.75,287.9731 C236.96,314.3831 228.32,340.3731 221.48,360.9331 " fill="none" id="JobOffer-OfferStatus" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[78401ec78c89bd4937d00995e8d10507]
+link JobSource to SourceType--><path d="M515.58,460.3531 C502.78,490.0231 487.37,525.7131 476.11,551.8031 " fill="none" id="JobSource-SourceType" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[07d280c11998820116e7120ca3f7941a]
+link CollectionRun to RunStatus--><path d="M618.5,658.1231 C618.5,678.2531 618.5,699.7031 618.5,717.7031 " fill="none" id="CollectionRun-RunStatus" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9ebf9823e6fa09f7eedc62b75415b57c]
+@startuml job_sourcing_domain
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam class {
+  BackgroundColor #FEFECE
+  BorderColor #A80036
+  ArrowColor #A80036
+}
+
+title Sourcing des offres — Modèle du domaine
+
+enum ContractType {
+  CDI
+  CDD
+  STAGE
+  FREELANCE
+}
+
+enum OfferStatus {
+  NEW
+  ANALYZED
+  ARCHIVED
+}
+
+enum SourceType {
+  OFFICIAL_API
+  SCRAPER
+}
+
+enum RunStatus {
+  SUCCESS
+  FAILED
+  PARTIAL
+}
+
+class JobOffer <<Aggregate Root>> {
+  - id : UUID
+  - sourceId : UUID
+  - sourceUrl : string
+  - fingerprint : string
+  - title : string
+  - company : string
+  - location : string
+  - description : string
+  - requiredSkills : string[]
+  - contractType : ContractType
+  - postedAt : Date
+  - collectedAt : DateTime
+  - status : OfferStatus
+  - -
+  + markAsAnalyzed() : void
+  + archive() : void
+  + isDuplicateOf(other: JobOffer) : boolean
+}
+
+class JobOfferEmbedding {
+  - vector : float[]
+  - modelName : string
+  - createdAt : DateTime
+}
+
+class JobSource {
+  - id : UUID
+  - name : string
+  - type : SourceType
+  - baseUrl : string
+  - isActive : boolean
+}
+
+class CollectionRun {
+  - id : UUID
+  - sourceId : UUID
+  - startedAt : DateTime
+  - finishedAt : DateTime
+  - offersCollected : int
+  - status : RunStatus
+  - errorMessage : string
+}
+
+JobOffer "0..*" - - "1" JobSource
+JobOffer "1" *- - "0..1" JobOfferEmbedding
+JobSource "1" - - "0..*" CollectionRun
+
+JobOffer - - ContractType
+JobOffer - - OfferStatus
+JobSource - - SourceType
+CollectionRun - - RunStatus
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.10+7-Ubuntu-124.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

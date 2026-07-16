@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="430px" preserveAspectRatio="none" style="width:1001px;height:430px;" version="1.1" viewBox="0 0 1001 430" width="1001px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="384" x="312.5" y="16.708">Moteur de matching — Services techniques</text><!--MD5=[083f3b810b36a8ee1615554bfc6dc11a]
+class IEmbeddingSimilarityCalculator--><rect fill="#FEFECE" height="66.7422" id="IEmbeddingSimilarityCalculator" style="stroke: #A80036; stroke-width: 1.5;" width="299" x="6" y="224.4531"/><ellipse cx="54.75" cy="243.4219" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M50.6719,239.1875 L50.6719,237.0313 L58.0625,237.0313 L58.0625,239.1875 L55.5938,239.1875 L55.5938,247.2656 L58.0625,247.2656 L58.0625,249.4219 L50.6719,249.4219 L50.6719,247.2656 L53.1406,247.2656 L53.1406,239.1875 L50.6719,239.1875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="151.75" y="240.5918">«port»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="193" x="75.25" y="254.5605">IEmbeddingSimilarityCalculator</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="304" y1="262.3906" y2="262.3906"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="304" y1="270.3906" y2="270.3906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="287" x="12" y="284.6011">+cosineSimilarity(vecA: float[], vecB: float[]) : float</text><!--MD5=[7f9f2ca5f06c2c8f9f9f8707fe7ae169]
+class CosineSimilarityCalculator--><rect fill="#FEFECE" height="60.8047" id="CosineSimilarityCalculator" style="stroke: #A80036; stroke-width: 1.5;" width="299" x="6" y="358.9531"/><ellipse cx="71.25" cy="374.9531" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M74.2188,380.5938 Q73.6406,380.8906 73,381.0313 Q72.3594,381.1875 71.6563,381.1875 Q69.1563,381.1875 67.8281,379.5469 Q66.5156,377.8906 66.5156,374.7656 Q66.5156,371.6406 67.8281,369.9844 Q69.1563,368.3281 71.6563,368.3281 Q72.3594,368.3281 73,368.4844 Q73.6563,368.6406 74.2188,368.9375 L74.2188,371.6563 Q73.5938,371.0781 73,370.8125 Q72.4063,370.5313 71.7813,370.5313 Q70.4375,370.5313 69.75,371.6094 Q69.0625,372.6719 69.0625,374.7656 Q69.0625,376.8594 69.75,377.9375 Q70.4375,379 71.7813,379 Q72.4063,379 73,378.7344 Q73.5938,378.4531 74.2188,377.875 L74.2188,380.5938 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="160" x="91.75" y="379.1074">CosineSimilarityCalculator</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="304" y1="390.9531" y2="390.9531"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="304" y1="398.9531" y2="398.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="287" x="12" y="413.1636">+cosineSimilarity(vecA: float[], vecB: float[]) : float</text><!--MD5=[fc38a648f7a83b8b39171d2c7ed4a0f9]
+class ILLMMatchingEvaluator--><rect fill="#FEFECE" height="66.7422" id="ILLMMatchingEvaluator" style="stroke: #A80036; stroke-width: 1.5;" width="305" x="340" y="224.4531"/><ellipse cx="416.25" cy="243.4219" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M412.1719,239.1875 L412.1719,237.0313 L419.5625,237.0313 L419.5625,239.1875 L417.0938,239.1875 L417.0938,247.2656 L419.5625,247.2656 L419.5625,249.4219 L412.1719,249.4219 L412.1719,247.2656 L414.6406,247.2656 L414.6406,239.1875 L412.1719,239.1875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="488.75" y="240.5918">«port»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="144" x="436.75" y="254.5605">ILLMMatchingEvaluator</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="341" x2="644" y1="262.3906" y2="262.3906"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="341" x2="644" y1="270.3906" y2="270.3906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="293" x="346" y="284.6011">+evaluate(cv: CV, offer: JobOffer) : LLMAssessment</text><!--MD5=[eef5cc178bbd0a2c434bbb7c3933dc2f]
+class ClaudeMatchingEvaluator--><rect fill="#FEFECE" height="60.8047" id="ClaudeMatchingEvaluator" style="stroke: #A80036; stroke-width: 1.5;" width="305" x="340" y="358.9531"/><ellipse cx="408.75" cy="374.9531" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M411.7188,380.5938 Q411.1406,380.8906 410.5,381.0313 Q409.8594,381.1875 409.1563,381.1875 Q406.6563,381.1875 405.3281,379.5469 Q404.0156,377.8906 404.0156,374.7656 Q404.0156,371.6406 405.3281,369.9844 Q406.6563,368.3281 409.1563,368.3281 Q409.8594,368.3281 410.5,368.4844 Q411.1563,368.6406 411.7188,368.9375 L411.7188,371.6563 Q411.0938,371.0781 410.5,370.8125 Q409.9063,370.5313 409.2813,370.5313 Q407.9375,370.5313 407.25,371.6094 Q406.5625,372.6719 406.5625,374.7656 Q406.5625,376.8594 407.25,377.9375 Q407.9375,379 409.2813,379 Q409.9063,379 410.5,378.7344 Q411.0938,378.4531 411.7188,377.875 L411.7188,380.5938 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="159" x="429.25" y="379.1074">ClaudeMatchingEvaluator</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="341" x2="644" y1="390.9531" y2="390.9531"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="341" x2="644" y1="398.9531" y2="398.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="293" x="346" y="413.1636">+evaluate(cv: CV, offer: JobOffer) : LLMAssessment</text><!--MD5=[c97f994b392e61b01fbfa7eae0467138]
+class IMatchRepository--><rect fill="#FEFECE" height="79.5469" id="IMatchRepository" style="stroke: #A80036; stroke-width: 1.5;" width="310" x="680.5" y="217.9531"/><ellipse cx="777.25" cy="236.9219" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M773.1719,232.6875 L773.1719,230.5313 L780.5625,230.5313 L780.5625,232.6875 L778.0938,232.6875 L778.0938,240.7656 L780.5625,240.7656 L780.5625,242.9219 L773.1719,242.9219 L773.1719,240.7656 L775.6406,240.7656 L775.6406,232.6875 L773.1719,232.6875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="831.75" y="234.0918">«port»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="108" x="797.75" y="248.0605">IMatchRepository</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="681.5" x2="989.5" y1="255.8906" y2="255.8906"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="681.5" x2="989.5" y1="263.8906" y2="263.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="155" x="686.5" y="278.1011">+save(match: Match) : void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="298" x="686.5" y="290.9058">+findByCvAndOffer(cvId: UUID, offerId: UUID) : Match</text><!--MD5=[2cabeeb1ade15bf7c4f095273d48f8fa]
+class MatchingService--><rect fill="#FEFECE" height="112.0234" id="MatchingService" style="stroke: #A80036; stroke-width: 1.5;" width="619" x="183" y="28.9531"/><ellipse cx="437.25" cy="44.9531" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M440.2188,50.5938 Q439.6406,50.8906 439,51.0313 Q438.3594,51.1875 437.6563,51.1875 Q435.1563,51.1875 433.8281,49.5469 Q432.5156,47.8906 432.5156,44.7656 Q432.5156,41.6406 433.8281,39.9844 Q435.1563,38.3281 437.6563,38.3281 Q438.3594,38.3281 439,38.4844 Q439.6563,38.6406 440.2188,38.9375 L440.2188,41.6563 Q439.5938,41.0781 439,40.8125 Q438.4063,40.5313 437.7813,40.5313 Q436.4375,40.5313 435.75,41.6094 Q435.0625,42.6719 435.0625,44.7656 Q435.0625,46.8594 435.75,47.9375 Q436.4375,49 437.7813,49 Q438.4063,49 439,48.7344 Q439.5938,48.4531 440.2188,47.875 L440.2188,50.5938 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="102" x="457.75" y="49.1074">MatchingService</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="184" x2="801" y1="60.9531" y2="60.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="301" x="189" y="75.1636">-similarityCalculator : IEmbeddingSimilarityCalculator</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="213" x="189" y="87.9683">-llmEvaluator : ILLMMatchingEvaluator</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="170" x="189" y="100.7729">-repository : IMatchRepository</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="184" x2="801" y1="107.3672" y2="107.3672"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="404" x="189" y="121.5776">+computeMatch(cv: CV, offer: JobOffer, config: MatchingConfig) : Match</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="607" x="189" y="134.3823">-combineScores(semanticSimilarity: float, llmAssessment: LLMAssessment, config: MatchingConfig) : float</text><!--MD5=[1f53b85e75c70a25c0527635d30fbd5e]
+reverse link IEmbeddingSimilarityCalculator to CosineSimilarityCalculator--><path d="M155.5,311.8131 C155.5,327.8731 155.5,344.9431 155.5,358.8831 " fill="none" id="IEmbeddingSimilarityCalculator&lt;-CosineSimilarityCalculator" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="148.5,311.6331,155.5,291.6331,162.5,311.6331,148.5,311.6331" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[eb78283bc12e5fd3a2239883d02e83a0]
+reverse link ILLMMatchingEvaluator to ClaudeMatchingEvaluator--><path d="M492.5,311.8131 C492.5,327.8731 492.5,344.9431 492.5,358.8831 " fill="none" id="ILLMMatchingEvaluator&lt;-ClaudeMatchingEvaluator" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="485.5,311.6331,492.5,291.6331,499.5,311.6331,485.5,311.6331" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[dd17d06e51a79e64c469c4f738cb4610]
+link MatchingService to IEmbeddingSimilarityCalculator--><path d="M384.02,141.0031 C331.56,167.6231 270.17,198.7631 224.24,222.0731 " fill="none" id="MatchingService-&gt;IEmbeddingSimilarityCalculator" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="219.56,224.4431,229.3963,223.9456,224.0206,222.1842,225.782,216.8086,219.56,224.4431" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37" x="325.5" y="184.02">utilise</text><!--MD5=[d0371af5c1f84b1cec4024eae8034522]
+link MatchingService to ILLMMatchingEvaluator--><path d="M492.5,141.0031 C492.5,166.5931 492.5,196.3831 492.5,219.3531 " fill="none" id="MatchingService-&gt;ILLMMatchingEvaluator" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="492.5,224.4431,496.5,215.4431,492.5,219.4431,488.5,215.4431,492.5,224.4431" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37" x="493.5" y="184.02">utilise</text><!--MD5=[423a1140c56f73222391ce9c57e92987]
+link MatchingService to IMatchRepository--><path d="M602.92,141.0031 C651.48,165.2131 707.56,193.1731 752.49,215.5631 " fill="none" id="MatchingService-&gt;IMatchRepository" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="757.08,217.8531,750.8093,210.2585,752.605,215.6228,747.2407,217.4185,757.08,217.8531" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37" x="696.5" y="184.02">utilise</text><!--MD5=[ec9b3bf37ad8a5d72f37d3bf2272205a]
+@startuml matching_technical
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam class {
+  BackgroundColor #FEFECE
+  BorderColor #A80036
+  ArrowColor #A80036
+}
+
+title Moteur de matching — Services techniques
+
+interface IEmbeddingSimilarityCalculator <<port>> {
+  + cosineSimilarity(vecA: float[], vecB: float[]) : float
+}
+
+class CosineSimilarityCalculator {
+  + cosineSimilarity(vecA: float[], vecB: float[]) : float
+}
+
+interface ILLMMatchingEvaluator <<port>> {
+  + evaluate(cv: CV, offer: JobOffer) : LLMAssessment
+}
+
+class ClaudeMatchingEvaluator {
+  + evaluate(cv: CV, offer: JobOffer) : LLMAssessment
+}
+
+interface IMatchRepository <<port>> {
+  + save(match: Match) : void
+  + findByCvAndOffer(cvId: UUID, offerId: UUID) : Match
+}
+
+class MatchingService {
+  - similarityCalculator : IEmbeddingSimilarityCalculator
+  - llmEvaluator : ILLMMatchingEvaluator
+  - repository : IMatchRepository
+  - -
+  + computeMatch(cv: CV, offer: JobOffer, config: MatchingConfig) : Match
+  - combineScores(semanticSimilarity: float, llmAssessment: LLMAssessment, config: MatchingConfig) : float
+}
+
+IEmbeddingSimilarityCalculator <|.. CosineSimilarityCalculator
+ILLMMatchingEvaluator <|.. ClaudeMatchingEvaluator
+
+MatchingService - -> IEmbeddingSimilarityCalculator : utilise
+MatchingService - -> ILLMMatchingEvaluator : utilise
+MatchingService - -> IMatchRepository : utilise
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.10+7-Ubuntu-124.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

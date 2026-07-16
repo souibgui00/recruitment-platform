@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="367px" preserveAspectRatio="none" style="width:788px;height:367px;" version="1.1" viewBox="0 0 788 367" width="788px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="384" x="205.5" y="16.708">Moteur de matching — Modèle du domaine</text><!--MD5=[5f0899136ed8f523b18ed05779c24112]
+class Match--><rect fill="#FEFECE" height="156.375" id="Match" style="stroke: #A80036; stroke-width: 1.5;" width="277" x="241.5" y="28.9531"/><ellipse cx="321.25" cy="47.9219" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M324.2188,53.5625 Q323.6406,53.8594 323,54 Q322.3594,54.1563 321.6563,54.1563 Q319.1563,54.1563 317.8281,52.5156 Q316.5156,50.8594 316.5156,47.7344 Q316.5156,44.6094 317.8281,42.9531 Q319.1563,41.2969 321.6563,41.2969 Q322.3594,41.2969 323,41.4531 Q323.6563,41.6094 324.2188,41.9063 L324.2188,44.625 Q323.5938,44.0469 323,43.7813 Q322.4063,43.5 321.7813,43.5 Q320.4375,43.5 319.75,44.5781 Q319.0625,45.6406 319.0625,47.7344 Q319.0625,49.8281 319.75,50.9063 Q320.4375,51.9688 321.7813,51.9688 Q322.4063,51.9688 323,51.7031 Q323.5938,51.4219 324.2188,50.8438 L324.2188,53.5625 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="113" x="339.75" y="45.0918">«Aggregate Root»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="38" x="377.25" y="59.0605">Match</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="242.5" x2="517.5" y1="66.8906" y2="66.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="247.5" y="81.1011">-id : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="65" x="247.5" y="93.9058">-cvId : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="247.5" y="106.7104">-jobOfferId : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="146" x="247.5" y="119.5151">-semanticSimilarity : float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="145" x="247.5" y="132.3198">-compatibilityScore : float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="137" x="247.5" y="145.1245">-computedAt : DateTime</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="242.5" x2="517.5" y1="151.7188" y2="151.7188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="247.5" y="165.9292">+exceedsThreshold(threshold: float) : boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="239" x="247.5" y="178.7339">+getScoreBreakdown() : ScoreBreakdown</text><!--MD5=[45a66316927956b26556222c7fcf877a]
+class LLMAssessment--><rect fill="#FEFECE" height="92.3516" id="LLMAssessment" style="stroke: #A80036; stroke-width: 1.5;" width="156" x="6" y="254.9531"/><ellipse cx="32.7" cy="273.9219" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M35.6688,279.5625 Q35.0906,279.8594 34.45,280 Q33.8094,280.1563 33.1063,280.1563 Q30.6063,280.1563 29.2781,278.5156 Q27.9656,276.8594 27.9656,273.7344 Q27.9656,270.6094 29.2781,268.9531 Q30.6063,267.2969 33.1063,267.2969 Q33.8094,267.2969 34.45,267.4531 Q35.1063,267.6094 35.6688,267.9063 L35.6688,270.625 Q35.0438,270.0469 34.45,269.7813 Q33.8563,269.5 33.2313,269.5 Q31.8875,269.5 31.2,270.5781 Q30.5125,271.6406 30.5125,273.7344 Q30.5125,275.8281 31.2,276.9063 Q31.8875,277.9688 33.2313,277.9688 Q33.8563,277.9688 34.45,277.7031 Q35.0438,277.4219 35.6688,276.8438 L35.6688,279.5625 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="92" x="52.3" y="271.0918">«Value Object»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="98" x="49.3" y="285.0605">LLMAssessment</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="161" y1="292.8906" y2="292.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="144" x="12" y="307.1011">-matchingPoints : string[]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113" x="12" y="319.9058">-gapPoints : string[]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103" x="12" y="332.7104">-summary : string</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="161" y1="339.3047" y2="339.3047"/><!--MD5=[22f46dca7995cfbb6d27cbb208f46186]
+class MatchingConfig--><rect fill="#FEFECE" height="112.0234" id="MatchingConfig" style="stroke: #A80036; stroke-width: 1.5;" width="174" x="197" y="244.9531"/><ellipse cx="232.7" cy="260.9531" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M235.6688,266.5938 Q235.0906,266.8906 234.45,267.0313 Q233.8094,267.1875 233.1063,267.1875 Q230.6063,267.1875 229.2781,265.5469 Q227.9656,263.8906 227.9656,260.7656 Q227.9656,257.6406 229.2781,255.9844 Q230.6063,254.3281 233.1063,254.3281 Q233.8094,254.3281 234.45,254.4844 Q235.1063,254.6406 235.6688,254.9375 L235.6688,257.6563 Q235.0438,257.0781 234.45,256.8125 Q233.8563,256.5313 233.2313,256.5313 Q231.8875,256.5313 231.2,257.6094 Q230.5125,258.6719 230.5125,260.7656 Q230.5125,262.8594 231.2,263.9375 Q231.8875,265 233.2313,265 Q233.8563,265 234.45,264.7344 Q235.0438,264.4531 235.6688,263.875 L235.6688,266.5938 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="96" x="251.3" y="265.1074">MatchingConfig</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="198" x2="370" y1="276.9531" y2="276.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="203" y="291.1636">-userId : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95" x="203" y="303.9683">-threshold : float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="130" x="203" y="316.7729">-semanticWeight : float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="95" x="203" y="329.5776">-llmWeight : float</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="198" x2="370" y1="336.1719" y2="336.1719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="162" x="203" y="350.3823">+validateWeights() : boolean</text><!--MD5=[4b7cd2c1fb62136c1de7e10a70680ecb]
+class CV--><rect fill="#FEFECE" height="53.9375" id="CV" style="stroke: #A80036; stroke-width: 1.5;" width="141" x="406.5" y="273.9531"/><ellipse cx="421.5" cy="292.9219" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M424.4688,298.5625 Q423.8906,298.8594 423.25,299 Q422.6094,299.1563 421.9063,299.1563 Q419.4063,299.1563 418.0781,297.5156 Q416.7656,295.8594 416.7656,292.7344 Q416.7656,289.6094 418.0781,287.9531 Q419.4063,286.2969 421.9063,286.2969 Q422.6094,286.2969 423.25,286.4531 Q423.9063,286.6094 424.4688,286.9063 L424.4688,289.625 Q423.8438,289.0469 423.25,288.7813 Q422.6563,288.5 422.0313,288.5 Q420.6875,288.5 420,289.5781 Q419.3125,290.6406 419.3125,292.7344 Q419.3125,294.8281 420,295.9063 Q420.6875,296.9688 422.0313,296.9688 Q422.6563,296.9688 423.25,296.7031 Q423.8438,296.4219 424.4688,295.8438 L424.4688,298.5625 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="113" x="433.5" y="290.0918">«from Gestion CV»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="16" x="482" y="304.0605">CV</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="407.5" x2="546.5" y1="311.8906" y2="311.8906"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="407.5" x2="546.5" y1="319.8906" y2="319.8906"/><!--MD5=[72189e7a27001b4df66b6ea620c867a5]
+class JobOffer--><rect fill="#FEFECE" height="53.9375" id="JobOffer" style="stroke: #A80036; stroke-width: 1.5;" width="194" x="583" y="273.9531"/><ellipse cx="598" cy="292.9219" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M600.9688,298.5625 Q600.3906,298.8594 599.75,299 Q599.1094,299.1563 598.4063,299.1563 Q595.9063,299.1563 594.5781,297.5156 Q593.2656,295.8594 593.2656,292.7344 Q593.2656,289.6094 594.5781,287.9531 Q595.9063,286.2969 598.4063,286.2969 Q599.1094,286.2969 599.75,286.4531 Q600.4063,286.6094 600.9688,286.9063 L600.9688,289.625 Q600.3438,289.0469 599.75,288.7813 Q599.1563,288.5 598.5313,288.5 Q597.1875,288.5 596.5,289.5781 Q595.8125,290.6406 595.8125,292.7344 Q595.8125,294.8281 596.5,295.9063 Q597.1875,296.9688 598.5313,296.9688 Q599.1563,296.9688 599.75,296.7031 Q600.3438,296.4219 600.9688,295.8438 L600.9688,298.5625 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="166" x="610" y="290.0918">«from Sourcing des offres»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="668.5" y="304.0605">JobOffer</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="584" x2="776" y1="311.8906" y2="311.8906"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="584" x2="776" y1="319.8906" y2="319.8906"/><!--MD5=[fe22070fb5f0f568453241a4c4aaaad4]
+reverse link Match to LLMAssessment--><path d="M249.71,192.4631 C216.59,213.9531 182.27,236.2131 153.51,254.8631 " fill="none" id="Match&lt;-LLMAssessment" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="260.88,185.2131,253.6695,185.1187,250.8091,191.7382,258.0195,191.8326,260.88,185.2131" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="241.1451" y="205.4425">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="155.1318" y="244.0429">1</text><!--MD5=[fa8acdd1503031f5065791a21ddaa952]
+link Match to CV--><path d="M419.03,185.2131 C434.93,216.6831 452.24,250.9531 463.77,273.7631 " fill="none" id="Match-CV" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="398.654" y="205.4425">0..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="451.7856" y="262.8305">1</text><!--MD5=[fc08bb18a194c02eb0ef89070e3e746c]
+link Match to JobOffer--><path d="M500.72,185.2131 C549.9,216.6831 603.43,250.9531 639.08,273.7631 " fill="none" id="Match-JobOffer" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="488.13" y="205.4425">0..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="620.6923" y="262.8305">1</text><!--MD5=[89fed34fa3f5ac148c1e96d200172afe]
+link Match to MatchingConfig--><path d="M341.37,185.2131 C331.42,205.1231 320.91,226.1431 311.64,244.6731 " fill="none" id="Match-MatchingConfig" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="313.592" y="205.4425">0..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="306.5211" y="233.9735">1</text><!--MD5=[8083d857efb5cca246e83b37539e6e53]
+@startuml matching_domain
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam class {
+  BackgroundColor #FEFECE
+  BorderColor #A80036
+  ArrowColor #A80036
+}
+
+title Moteur de matching — Modèle du domaine
+
+class Match <<Aggregate Root>> {
+  - id : UUID
+  - cvId : UUID
+  - jobOfferId : UUID
+  - semanticSimilarity : float
+  - compatibilityScore : float
+  - computedAt : DateTime
+  - -
+  + exceedsThreshold(threshold: float) : boolean
+  + getScoreBreakdown() : ScoreBreakdown
+}
+
+class LLMAssessment <<Value Object>> {
+  - matchingPoints : string[]
+  - gapPoints : string[]
+  - summary : string
+}
+
+class MatchingConfig {
+  - userId : UUID
+  - threshold : float
+  - semanticWeight : float
+  - llmWeight : float
+  - -
+  + validateWeights() : boolean
+}
+
+class CV <<from Gestion CV>> {
+}
+
+class JobOffer <<from Sourcing des offres>> {
+}
+
+Match "1" *- - "1" LLMAssessment
+Match "0..*" - - "1" CV
+Match "0..*" - - "1" JobOffer
+Match "0..*" - - "1" MatchingConfig
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.10+7-Ubuntu-124.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

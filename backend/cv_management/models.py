@@ -17,6 +17,14 @@ class Skill(Base):
     id: Mapped[uuid.UUID] = mapped_column(primary_key=True, default=uuid.uuid4)
     canonical_name: Mapped[str] = mapped_column(String(100), unique=True)
     category: Mapped[str] = mapped_column(String(50))
+from enum import Enum as PyEnum
+from sqlalchemy import Enum as SqlEnum
+
+class CVStatus(str, PyEnum):
+    UPLOADED = "UPLOADED"
+    PARSING = "PARSING"
+    PARSED = "PARSED"
+    FAILED = "FAILED"
 
 class CV(Base):
     __tablename__ = "cvs"
@@ -25,8 +33,43 @@ class CV(Base):
     user_id: Mapped[uuid.UUID] = mapped_column()
     raw_file_url: Mapped[str] = mapped_column(String(500))
     language: Mapped[str] = mapped_column(String(10))
-    status: Mapped[str] = mapped_column(String(20), default="UPLOADED")
-    parsed_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)    
+    status: Mapped[CVStatus] = mapped_column(SqlEnum(CVStatus), default=CVStatus.UPLOADED)
+    parsed_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
+    failure_reason: Mapped[Optional[str]] = mapped_column(String(1000), nullable=True)
+
+    def mark_as_parsed(self):
+        self.status = CVStatus.PARSED
+        self.parsed_at = datetime.utcnow()
+        self.failure_reason = None
+
+    def mark_as_failed(self, reason: str):
+        self.status = CVStatus.FAILED
+        self.failure_reason = reason
+
+    def add_experience(self, title: str, company: str, start_date: date, end_date: Optional[date], description: Optional[str], is_current: bool):
+        exp = Experience(
+            cv_id=self.id,
+            title=title,
+            company=company,
+            start_date=start_date,
+            end_date=end_date,
+            description=description,
+            is_current=is_current
+        )
+        return exp
+
+    def add_skill(self, skill_id: uuid.UUID, proficiency: str = "UNKNOWN", source: str = "EXPLICIT"):
+        cv_skill = CVSkill(
+            cv_id=self.id,
+            skill_id=skill_id,
+            proficiency=proficiency,
+            source=source
+        )
+        return cv_skill
+
+    def get_total_years_of_experience(self) -> float:
+        # Simplistic approach if we were to compute it on the fly, but for now we'll just return 0.0 or compute from experiences if loaded
+        return 0.0
 
 
 class Experience(Base):

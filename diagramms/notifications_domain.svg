@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="368px" preserveAspectRatio="none" style="width:517px;height:368px;" version="1.1" viewBox="0 0 517 368" width="517px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="314" x="105" y="16.708">Notifications — Modèle du domaine</text><!--MD5=[f7cfd16e4193b177764fb7ce127a666a]
+class NotificationType--><rect fill="#FEFECE" height="73.6094" id="NotificationType" style="stroke: #A80036; stroke-width: 1.5;" width="132" x="6" y="276.9531"/><ellipse cx="21" cy="292.9531" fill="#EB937F" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M25.1094,298.9531 L17.3906,298.9531 L17.3906,286.5625 L25.1094,286.5625 L25.1094,288.7188 L19.8438,288.7188 L19.8438,291.3906 L24.6094,291.3906 L24.6094,293.5469 L19.8438,293.5469 L19.8438,296.7969 L25.1094,296.7969 L25.1094,298.9531 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="100" x="35" y="297.1074">NotificationType</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="137" y1="308.9531" y2="308.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108" x="12" y="323.1636">APPLICATION_SENT</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="115" x="12" y="335.9683">APPLICATION_FAILED</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="137" y1="342.5625" y2="342.5625"/><!--MD5=[fb3f17a29161be4a141869ae8c9bf7ef]
+class NotificationChannel--><rect fill="#FEFECE" height="73.6094" id="NotificationChannel" style="stroke: #A80036; stroke-width: 1.5;" width="154" x="173" y="276.9531"/><ellipse cx="188" cy="292.9531" fill="#EB937F" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M192.1094,298.9531 L184.3906,298.9531 L184.3906,286.5625 L192.1094,286.5625 L192.1094,288.7188 L186.8438,288.7188 L186.8438,291.3906 L191.6094,291.3906 L191.6094,293.5469 L186.8438,293.5469 L186.8438,296.7969 L192.1094,296.7969 L192.1094,298.9531 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="122" x="202" y="297.1074">NotificationChannel</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="174" x2="326" y1="308.9531" y2="308.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="179" y="323.1636">EMAIL</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="179" y="335.9683">IN_APP</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="174" x2="326" y1="342.5625" y2="342.5625"/><!--MD5=[489b2a919516f920d97168bac890db56]
+class NotificationStatus--><rect fill="#FEFECE" height="86.4141" id="NotificationStatus" style="stroke: #A80036; stroke-width: 1.5;" width="144" x="362" y="270.9531"/><ellipse cx="377" cy="286.9531" fill="#EB937F" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M381.1094,292.9531 L373.3906,292.9531 L373.3906,280.5625 L381.1094,280.5625 L381.1094,282.7188 L375.8438,282.7188 L375.8438,285.3906 L380.6094,285.3906 L380.6094,287.5469 L375.8438,287.5469 L375.8438,290.7969 L381.1094,290.7969 L381.1094,292.9531 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="112" x="391" y="291.1074">NotificationStatus</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="363" x2="505" y1="302.9531" y2="302.9531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="368" y="317.1636">PENDING</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="368" y="329.9683">SENT</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="368" y="342.7729">FAILED</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="363" x2="505" y1="349.3672" y2="349.3672"/><!--MD5=[76b5e19c9337179d2d7ae334371d68c8]
+class Notification--><rect fill="#FEFECE" height="181.9844" id="Notification" style="stroke: #A80036; stroke-width: 1.5;" width="221" x="139.5" y="28.9531"/><ellipse cx="191.25" cy="47.9219" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M194.2188,53.5625 Q193.6406,53.8594 193,54 Q192.3594,54.1563 191.6563,54.1563 Q189.1563,54.1563 187.8281,52.5156 Q186.5156,50.8594 186.5156,47.7344 Q186.5156,44.6094 187.8281,42.9531 Q189.1563,41.2969 191.6563,41.2969 Q192.3594,41.2969 193,41.4531 Q193.6563,41.6094 194.2188,41.9063 L194.2188,44.625 Q193.5938,44.0469 193,43.7813 Q192.4063,43.5 191.7813,43.5 Q190.4375,43.5 189.75,44.5781 Q189.0625,45.6406 189.0625,47.7344 Q189.0625,49.8281 189.75,50.9063 Q190.4375,51.9688 191.7813,51.9688 Q192.4063,51.9688 193,51.7031 Q193.5938,51.4219 194.2188,50.8438 L194.2188,53.5625 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="113" x="209.75" y="45.0918">«Aggregate Root»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="71" x="230.75" y="59.0605">Notification</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="140.5" x2="359.5" y1="66.8906" y2="66.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="145.5" y="81.1011">-id : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="145.5" y="93.9058">-userId : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="130" x="145.5" y="106.7104">-type : NotificationType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="169" x="145.5" y="119.5151">-channel : NotificationChannel</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="154" x="145.5" y="132.3198">-relatedApplicationId : UUID</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="145.5" y="145.1245">-message : string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="152" x="145.5" y="157.9292">-status : NotificationStatus</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="145.5" y="170.7339">-sentAt : DateTime</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="140.5" x2="359.5" y1="177.3281" y2="177.3281"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121" x="145.5" y="191.5386">+markAsSent() : void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="209" x="145.5" y="204.3433">+markAsFailed(reason: string) : void</text><!--MD5=[ca215bcb9a7c7e2da543f7a6a0726af3]
+link Notification to NotificationType--><path d="M166.47,211.0531 C144.97,234.2431 123.05,257.8931 105.74,276.5631 " fill="none" id="Notification-NotificationType" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[13dc8f2257dfe326ac1d81f723300b41]
+link Notification to NotificationChannel--><path d="M250,211.0531 C250,234.2431 250,257.8931 250,276.5631 " fill="none" id="Notification-NotificationChannel" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[082717fad4a7bdad1e04ffc2e193ac26]
+link Notification to NotificationStatus--><path d="M336.34,211.0531 C356.32,231.9031 376.66,253.1231 393.57,270.7631 " fill="none" id="Notification-NotificationStatus" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[027a36d51252ab7a0a6f86a1c89d2255]
+@startuml notifications_domain
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam class {
+  BackgroundColor #FEFECE
+  BorderColor #A80036
+  ArrowColor #A80036
+}
+
+title Notifications — Modèle du domaine
+
+enum NotificationType {
+  APPLICATION_SENT
+  APPLICATION_FAILED
+}
+
+enum NotificationChannel {
+  EMAIL
+  IN_APP
+}
+
+enum NotificationStatus {
+  PENDING
+  SENT
+  FAILED
+}
+
+class Notification <<Aggregate Root>> {
+  - id : UUID
+  - userId : UUID
+  - type : NotificationType
+  - channel : NotificationChannel
+  - relatedApplicationId : UUID
+  - message : string
+  - status : NotificationStatus
+  - sentAt : DateTime
+  - -
+  + markAsSent() : void
+  + markAsFailed(reason: string) : void
+}
+
+Notification - - NotificationType
+Notification - - NotificationChannel
+Notification - - NotificationStatus
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.10+7-Ubuntu-124.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
