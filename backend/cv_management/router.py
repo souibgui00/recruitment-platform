@@ -172,8 +172,10 @@ def delete_cv(
     # Imports for cascading delete
     from cv_management.models import Experience, Education, Certification, CVSkill, PersonalInfo, CVEmbedding
     from matching.models import Match
+    from applications.models import Application
 
-    # Manual cascade delete
+    # Manual cascade delete - delete applications first (they depend on matches)
+    db.query(Application).join(Match).filter(Match.cv_id == cv_id).delete()
     db.query(Match).filter_by(cv_id=cv_id).delete()
     db.query(Experience).filter_by(cv_id=cv_id).delete()
     db.query(Education).filter_by(cv_id=cv_id).delete()
@@ -181,7 +183,7 @@ def delete_cv(
     db.query(CVSkill).filter_by(cv_id=cv_id).delete()
     db.query(PersonalInfo).filter_by(cv_id=cv_id).delete()
     db.query(CVEmbedding).filter_by(cv_id=cv_id).delete()
-    
+
     db.delete(cv)
     db.commit()
     return {"status": "deleted", "cv_id": str(cv_id)}

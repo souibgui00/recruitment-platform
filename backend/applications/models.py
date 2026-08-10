@@ -17,7 +17,6 @@ class ApplicationStatus(str, PyEnum):
     SENT = "SENT"
     FAILED = "FAILED"
     MANUAL_REQUIRED = "MANUAL_REQUIRED"
-    WAITING_FOR_USER = "WAITING_FOR_USER"
 
 class Application(Base):
     __tablename__ = "applications"
@@ -37,20 +36,13 @@ class Application(Base):
     cover_letter: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     execution_logs: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
     screenshots: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
-    
-    pending_question: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
-    user_responses: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
-    
+
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
     def approve(self):
         if self.status != ApplicationStatus.PENDING_VALIDATION:
             raise ValueError(f"Cannot approve application in status: {self.status}")
         self.status = ApplicationStatus.APPROVED
-
-    def mark_as_waiting_for_user(self, question: dict):
-        self.status = ApplicationStatus.WAITING_FOR_USER
-        self.pending_question = question
 
     def reject(self, reason: Optional[str] = None):
         if self.status != ApplicationStatus.PENDING_VALIDATION:

@@ -30,7 +30,7 @@ class CV(Base):
     __tablename__ = "cvs"
 
     id: Mapped[uuid.UUID] = mapped_column(primary_key=True, default=uuid.uuid4)
-    user_id: Mapped[uuid.UUID] = mapped_column()
+    user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"))
     filename: Mapped[Optional[str]] = mapped_column(String(500), nullable=True)
     raw_file_url: Mapped[str] = mapped_column(String(500))
     language: Mapped[str] = mapped_column(String(10))
