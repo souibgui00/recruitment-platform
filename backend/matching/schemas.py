@@ -11,6 +11,7 @@ class MatchAssessmentData(BaseModel):
     matching_points: List[str] = Field(default_factory=list, description="Strengths and matching skills")
     gap_points: List[str] = Field(default_factory=list, description="Missing skills or experience gaps")
     summary: str = Field(..., description="Short 1-2 sentence match justification")
+    score: int = Field(..., ge=0, le=100, description="Overall compatibility score from 0 to 100")
 
 
 class MatchResponse(BaseModel):

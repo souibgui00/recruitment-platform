@@ -4,3 +4,6 @@ uploaded_cvs/
 node_modules/
 .next/
 .env
+backend/static/screenshots/
+backend/model_cache/
+*.png

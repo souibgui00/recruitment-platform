@@ -1,4 +1,5 @@
 import os
+import secrets
 from datetime import datetime, timedelta
 from jose import jwt
 from passlib.context import CryptContext
@@ -6,8 +7,16 @@ from passlib.context import CryptContext
 # CryptContext for password hashing
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-# JWT configuration
-SECRET_KEY = os.environ.get("JWT_SECRET_KEY", "dev_secret_key_change_me_in_production_12345")
+# JWT configuration - support both JWT_SECRET_KEY and SECRET_KEY for compatibility
+SECRET_KEY = os.environ.get("JWT_SECRET_KEY") or os.environ.get("SECRET_KEY")
+if not SECRET_KEY:
+    import warnings
+    SECRET_KEY = secrets.token_urlsafe(32)
+    warnings.warn(
+        "No JWT_SECRET_KEY or SECRET_KEY environment variable set. "
+        f"Using ephemeral key: {SECRET_KEY[:8]}... "
+        "Set a persistent key in production!"
+    )
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 1 day expiration for development convenience
 

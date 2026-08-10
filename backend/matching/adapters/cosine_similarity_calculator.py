@@ -41,8 +41,7 @@ class PgVectorSimilarityCalculator(IEmbeddingSimilarityCalculator):
 
         query = text("""
             SELECT j.job_offer_id, 1.0 - (c.vector <=> j.vector) AS similarity
-            FROM cv_embeddings c
-            JOIN job_offer_embeddings j ON 1=1
+            FROM cv_embeddings c, job_offer_embeddings j
             WHERE c.cv_id = :cv_id
             ORDER BY c.vector <=> j.vector ASC
             LIMIT :limit

@@ -109,14 +109,13 @@ recruitment-platform/
 │   │   ├── schemas.py          # Pydantic response schemas
 │   │   ├── router.py           # /cvs endpoints (upload, parse, list, get)
 │   │   ├── parsing_service.py  # Orchestrates PDF→Text→LLM→Embedding pipeline
-│   │   ├── text_extraction.py  # pdfplumber PDF text extractor
-│   │   ├── llm_extraction.py   # Groq LLM structured data extraction
-│   │   ├── embedding_generation.py # E5 embedding wrapper
 │   │   ├── skill_normalization.py  # Skill name normalization utility
 │   │   ├── date_parsing.py     # Date string normalization utility
 │   │   ├── ports/              # Interface definitions (ITextExtractor, IEmbeddingProvider, ILLMExtractor)
-│   │   └── adapters/
-│   │       └── e5_embedding_provider.py # Singleton E5 model implementation
+│   │   └── adapters/           # Implementation of ports (PDF extractor, Groq LLM, E5 embeddings)
+│   │       ├── pdf_text_extractor.py
+│   │       ├── groq_llm_extractor.py
+│   │       └── e5_embedding_provider.py
 │   │
 │   ├── job_sourcing/           # Job Offer Aggregation Engine
 │   │   ├── models.py           # JobSource, JobOffer, JobOfferEmbedding, CollectionRun
@@ -141,9 +140,22 @@ recruitment-platform/
 │   │       ├── indeed/                   # Indeed scraper
 │   │       └── linkedin/                 # LinkedIn connector (mock/stub)
 │   │
-│   ├── applications/           # Candidate Applications Module (stub)
-│   ├── notifications/          # Notifications Module (stub)
-│   └── history/                # History/Audit Module (stub)
+│   ├── applications/           # Candidate Applications Module
+│   │   ├── models.py           # Application, UserAutoApplySettings models
+│   │   ├── schemas.py          # Pydantic response schemas
+│   │   ├── router.py           # /applications endpoints
+│   │   ├── application_service.py  # Business logic for applications
+│   │   ├── ports/              # IApplicationChannel interface
+│   │   ├── adapters/           # Playwright and SMTP channel implementations
+│   │   │   ├── playwright_application_channel.py
+│   │   │   └── smtp_application_channel.py
+│   │   └── agents/             # ATS-specific agents (Greenhouse, Lever, etc.)
+│   │
+│   ├── notifications/          # Notifications Module
+│   │   ├── models.py           # Notification model
+│   │   ├── schemas.py          # Pydantic response schemas
+│   │   ├── router.py           # /notifications endpoints
+│   │   └── services.py         # Notification business logic
 │
 └── frontend/
     ├── Dockerfile
@@ -608,10 +620,12 @@ Create a `.env` file at the root of the repository:
 # Database
 DATABASE_URL=postgresql://postgres:postgres@db:5432/recruitment_platform
 
-# Security
+# Security (JWT signing key)
+# You can use either SECRET_KEY or JWT_SECRET_KEY - both are supported
 SECRET_KEY=your-super-secret-jwt-key-here
+# Alternative: JWT_SECRET_KEY=your-super-secret-jwt-key-here
 
-# Groq AI API (for LLM CV parsing)
+# Groq AI API (for LLM CV parsing and matching evaluation)
 GROQ_API_KEY=your_groq_api_key_here
 ```
 

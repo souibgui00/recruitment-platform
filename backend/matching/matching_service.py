@@ -1,4 +1,5 @@
 import uuid
+import json
 from typing import List, Tuple
 from sqlalchemy.orm import Session
 from fastapi import HTTPException, status
@@ -95,7 +96,18 @@ class MatchingService:
         skills_list = [s[0] for s in cv_skills_rows]
         skills_str = ", ".join(skills_list) if skills_list else "Non spécifiées"
 
-        req_skills = job_offer.required_skills or "Non spécifiées"
+        req_skills = job_offer.required_skills
+        if req_skills:
+            try:
+                # Parse JSON if it's stored as JSON string
+                parsed_skills = json.loads(req_skills)
+                if isinstance(parsed_skills, list):
+                    req_skills = ", ".join(parsed_skills)
+            except (json.JSONDecodeError, TypeError):
+                # If not JSON, use as-is
+                pass
+        else:
+            req_skills = "Non spécifiées"
 
         cv_summary = f"Candidat: {name}. Compétences: {skills_str}. Expériences: {exp_summary}."
         job_summary = f"Titre: {job_offer.title}. Entreprise: {job_offer.company}. Lieu: {job_offer.location}. Compétences requises: {req_skills}. Description: {job_offer.description[:600]}"
@@ -106,8 +118,8 @@ class MatchingService:
         matching_points = assessment.get("matching_points", [])
         gap_points = assessment.get("gap_points", [])
 
-        # 4. Calculate local LLM score
-        llm_score = MatchingService.compute_llm_score(matching_points, gap_points)
+        # 4. Use LLM score from assessment, fallback to heuristic if not provided
+        llm_score = float(assessment.get("score", MatchingService.compute_llm_score(matching_points, gap_points)))
 
         # 4. Calculate weighted compatibility score (0 to 100)
         # compatibility_score = (semantic_sim * 100 * semantic_weight) + (llm_score * llm_weight)
@@ -152,6 +164,7 @@ class MatchingService:
     ) -> List[Tuple[Match, JobOffer]]:
         """
         Find best matching job offers for a given CV, calculating top vector matches and returning ranked scores.
+        Pre-filters by semantic similarity before calling LLM to avoid unnecessary API calls.
         """
         cv = db.get(CV, cv_id)
         if not cv:
@@ -166,12 +179,20 @@ class MatchingService:
 
         config = MatchingService.get_or_create_config(user_id, db)
 
-        # Retrieve top vector candidates using SQL pgvector
+        # Estimate minimum semantic similarity needed to reach threshold
+        # If semantic_weight is 0.6 and threshold is 70, minimum semantic is (70 - 0) / 0.6 / 100 = 0.7
+        min_semantic_threshold = 0.0
+        if config.semantic_weight > 0:
+            min_semantic_threshold = max(0.0, (config.threshold / 100.0 - config.llm_weight) / config.semantic_weight)
+        # Be slightly more lenient to account for LLM boosting potential
+        min_semantic_threshold = max(0.0, min_semantic_threshold - 0.1)
+
+        # Retrieve top vector candidates using SQL pgvector with pre-filtering
         top_candidates = similarity_calculator.get_top_matching_job_offers(
             cv_id=cv_id,
             db=db,
-            limit=limit * 2,  # Fetch wider sample for ranking
-            threshold=0.0
+            limit=limit * 3,  # Fetch wider sample since we'll pre-filter
+            threshold=min_semantic_threshold
         )
 
         results = []

@@ -14,4 +14,15 @@ with engine.connect() as connection:
 
 Base.metadata.create_all(engine)
 
+# Create HNSW index for vector similarity search
+with engine.connect() as connection:
+    connection.execute(text("""
+        CREATE INDEX IF NOT EXISTS idx_job_offer_embeddings_vector_hnsw
+        ON job_offer_embeddings
+        USING hnsw (vector vector_cosine_ops)
+    """))
+    connection.commit()
+
+print("Tables créées avec succès.")
+
 print("Tables créées avec succès.")
