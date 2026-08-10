@@ -12,5 +12,5 @@ def get_embedding_model() -> SentenceTransformer:
 
 def generate_embedding(text: str) -> list[float]:
     model = get_embedding_model()
-    embedding = model.encode(f"query: {text}")
+    embedding = model.encode(f"passage: {text}")
     return embedding.tolist()

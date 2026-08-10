@@ -1,8 +1,25 @@
+'use client';
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push('/dashboard');
+  }, [router]);
+
   return (
-    <main>
-      <h1>Plateforme de recrutement IA</h1>
-      <p>Ça fonctionne.</p>
-    </main>
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+      background: 'var(--bg-color)',
+      color: 'var(--text-secondary)'
+    }}>
+      Chargement...
+    </div>
   );
 }

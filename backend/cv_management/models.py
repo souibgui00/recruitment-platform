@@ -31,9 +31,11 @@ class CV(Base):
 
     id: Mapped[uuid.UUID] = mapped_column(primary_key=True, default=uuid.uuid4)
     user_id: Mapped[uuid.UUID] = mapped_column()
+    filename: Mapped[Optional[str]] = mapped_column(String(500), nullable=True)
     raw_file_url: Mapped[str] = mapped_column(String(500))
     language: Mapped[str] = mapped_column(String(10))
     status: Mapped[CVStatus] = mapped_column(SqlEnum(CVStatus), default=CVStatus.UPLOADED)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
     parsed_at: Mapped[Optional[datetime]] = mapped_column(DateTime, nullable=True)
     failure_reason: Mapped[Optional[str]] = mapped_column(String(1000), nullable=True)
 
@@ -117,6 +119,9 @@ class PersonalInfo(Base):
     email: Mapped[Optional[str]] = mapped_column(String(200), nullable=True)
     phone: Mapped[Optional[str]] = mapped_column(String(50), nullable=True)
     location: Mapped[Optional[str]] = mapped_column(String(200), nullable=True)
+    linkedin_url: Mapped[Optional[str]] = mapped_column(String(500), nullable=True)
+    github_url: Mapped[Optional[str]] = mapped_column(String(500), nullable=True)
+    salary_expectation: Mapped[Optional[str]] = mapped_column(String(200), nullable=True)
 
 
 class CVEmbedding(Base):

@@ -1,0 +1,1 @@
+# Indeed RSS connector package
