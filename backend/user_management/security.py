@@ -1,7 +1,7 @@
 import os
 import secrets
 from datetime import datetime, timedelta
-from jose import jwt
+from jose import jwt, JWTError
 from passlib.context import CryptContext
 
 # CryptContext for password hashing
@@ -19,6 +19,7 @@ if not SECRET_KEY:
     )
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 1 day expiration for development convenience
+REFRESH_TOKEN_EXPIRE_DAYS = 30  # 30 days for refresh token
 
 def hash_password(password: str) -> str:
     """Hash password using bcrypt."""
@@ -35,6 +36,34 @@ def create_access_token(data: dict, expires_delta: timedelta = None) -> str:
         expire = datetime.utcnow() + expires_delta
     else:
         expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-    to_encode.update({"exp": expire})
+    to_encode.update({"exp": expire, "type": "access"})
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
+
+def create_refresh_token(data: dict) -> str:
+    """Generate JWT refresh token."""
+    to_encode = data.copy()
+    expire = datetime.utcnow() + timedelta(days=REFRESH_TOKEN_EXPIRE_DAYS)
+    to_encode.update({"exp": expire, "type": "refresh"})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+def verify_token(token: str) -> dict:
+    """Verify and decode JWT token."""
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        return payload
+    except JWTError:
+        return None
+
+def generate_verification_token() -> str:
+    """Generate a random verification token."""
+    return secrets.token_urlsafe(32)
+
+def generate_reset_token() -> str:
+    """Generate a random password reset token."""
+    return secrets.token_urlsafe(32)
+
+def get_token_expiry(hours: int = 24) -> datetime:
+    """Get expiry datetime for tokens."""
+    return datetime.utcnow() + timedelta(hours=hours)

@@ -4,7 +4,7 @@ from enum import Enum as PyEnum
 from typing import Optional
 from sqlalchemy import String, DateTime, ForeignKey, Enum, Text, Boolean, UniqueConstraint, JSON
 from sqlalchemy.orm import Mapped, mapped_column
-from cv_management.models import Base
+from shared.base import Base
 
 class ApplicationMode(str, PyEnum):
     MANUAL_VALIDATION = "MANUAL_VALIDATION"

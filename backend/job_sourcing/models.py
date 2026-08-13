@@ -8,7 +8,7 @@ from pgvector.sqlalchemy import Vector
 from enum import Enum as PyEnum
 from sqlalchemy import Enum as SqlEnum
 
-from cv_management.models import Base
+from shared.base import Base
 
 class ContractType(str, PyEnum):
     CDI = "CDI"

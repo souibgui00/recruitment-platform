@@ -3,7 +3,7 @@ from datetime import datetime
 from typing import Optional, Any
 from sqlalchemy import String, Float, DateTime, ForeignKey, Text, JSON, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column
-from cv_management.models import Base
+from shared.base import Base
 
 
 class Match(Base):

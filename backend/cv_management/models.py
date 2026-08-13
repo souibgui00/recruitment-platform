@@ -3,12 +3,9 @@ from datetime import datetime, date
 from typing import Optional
 
 from sqlalchemy import String, DateTime, Date, ForeignKey, Boolean
-from sqlalchemy.orm import Mapped, mapped_column, DeclarativeBase
+from sqlalchemy.orm import Mapped, mapped_column
 from pgvector.sqlalchemy import Vector
-
-
-class Base(DeclarativeBase):
-    pass
+from shared.base import Base
 
 
 class Skill(Base):
