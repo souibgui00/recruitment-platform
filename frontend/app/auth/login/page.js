@@ -10,9 +10,19 @@ export default function LoginPage() {
   const [errorMsg, setErrorMsg] = useState('');
   const { login, loading } = useAuth();
 
+  // Email validation
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const isEmailValid = emailRegex.test(email);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setErrorMsg('');
+    
+    if (!isEmailValid) {
+      setErrorMsg("Veuillez entrer une adresse email valide.");
+      return;
+    }
+    
     const result = await login(email, password);
     if (!result.success) {
       setErrorMsg(result.error);
@@ -69,10 +79,18 @@ export default function LoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              style={{
+                borderColor: email && !isEmailValid ? 'var(--error)' : undefined
+              }}
             />
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginTop: '0.25rem' }}>
               Ex: jean.dupont@email.com
             </p>
+            {email && !isEmailValid && (
+              <p style={{ color: 'var(--error)', fontSize: '0.8rem', marginTop: '0.25rem' }}>
+                Format d'email invalide
+              </p>
+            )}
           </div>
 
           <div className="form-group" style={{ marginBottom: '2rem' }}>
@@ -100,10 +118,16 @@ export default function LoginPage() {
             type="submit"
             className="btn btn-primary"
             style={{ width: '100%', padding: '0.85rem' }}
-            disabled={loading}
+            disabled={loading || !isEmailValid}
           >
             {loading ? 'Connexion en cours...' : 'Se connecter'}
           </button>
+          
+          {!isEmailValid && email && (
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginTop: '1rem', textAlign: 'center' }}>
+              Veuillez corriger l'email avant de continuer
+            </p>
+          )}
         </form>
 
         <div style={{ textAlign: 'center', marginTop: '1.5rem', fontSize: '0.9rem' }}>

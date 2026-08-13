@@ -121,6 +121,11 @@ export function AuthProvider({ children }) {
           // Simple string error
           message = errorData.detail;
         }
+        
+        // Handle rate limiting
+        if (error.response?.status === 429) {
+          message = "Trop de tentatives d'inscription. Réessayez dans 1 minute.";
+        }
       }
       
       // Ensure message is always a string, not an object

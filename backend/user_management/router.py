@@ -11,11 +11,29 @@ from user_management.dependencies import get_current_user
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
-# Simple in-memory rate limiting for login attempts
+# Simple in-memory rate limiting for login and register attempts
 login_attempts = {}
+register_attempts = {}
 
 @router.post("/register", response_model=UserResponse, status_code=status.HTTP_201_CREATED)
 def register(user_in: UserCreate, db: Session = Depends(get_db)):
+    # Rate limiting: 3 registration attempts per minute per IP
+    client_ip = "client"  # In production, use request.client.host
+    current_time = time.time()
+    
+    # Clean old attempts (older than 1 minute)
+    register_attempts[client_ip] = [t for t in register_attempts.get(client_ip, []) if current_time - t < 60]
+    
+    # Check rate limit
+    if len(register_attempts.get(client_ip, [])) >= 3:
+        raise HTTPException(
+            status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+            detail="Trop de tentatives d'inscription. Réessayez dans 1 minute."
+        )
+    
+    # Record this attempt
+    register_attempts.setdefault(client_ip, []).append(current_time)
+    
     # Check if user already exists
     existing_user = db.query(User).filter(User.email == user_in.email).first()
     if existing_user:
@@ -35,7 +53,7 @@ def register(user_in: UserCreate, db: Session = Depends(get_db)):
 
 @router.post("/login", response_model=Token)
 def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
-    # Simple rate limiting: 5 attempts per minute per IP
+    # Rate limiting: 5 login attempts per minute per IP
     client_ip = "client"  # In production, use request.client.host
     current_time = time.time()
     
