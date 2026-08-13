@@ -69,7 +69,24 @@ export function AuthProvider({ children }) {
       return { success: true };
     } catch (error) {
       console.error(error);
-      const message = error.response?.data?.detail || "Identifiants invalides.";
+      let message = "Erreur de connexion. Veuillez vérifier vos identifiants.";
+      
+      if (error.response?.data) {
+        const errorData = error.response.data;
+        
+        // Handle rate limiting errors
+        if (error.response?.status === 429) {
+          message = "Trop de tentatives de connexion. Réessayez dans 1 minute.";
+        } else if (errorData.detail) {
+          message = errorData.detail;
+        }
+      }
+      
+      // Ensure message is always a string
+      if (typeof message !== 'string') {
+        message = "Erreur de connexion. Veuillez réessayer.";
+      }
+      
       return { success: false, error: message };
     } finally {
       setLoading(false);
@@ -83,7 +100,34 @@ export function AuthProvider({ children }) {
       return { success: true };
     } catch (error) {
       console.error(error);
-      const message = error.response?.data?.detail || "Une erreur est survenue lors de l'inscription.";
+      // Extract user-friendly error message from Pydantic validation errors
+      let message = "Une erreur est survenue lors de l'inscription. Veuillez réessayer.";
+      
+      if (error.response?.data) {
+        const errorData = error.response.data;
+        
+        // Handle Pydantic validation errors
+        if (errorData.detail && Array.isArray(errorData.detail)) {
+          // Pydantic validation errors come as array of objects
+          const firstError = errorData.detail[0];
+          if (firstError.msg) {
+            message = firstError.msg;
+          } else if (firstError.type === 'value_error') {
+            message = firstError.input 
+              ? `Valeur invalide pour "${firstError.loc[1]}": ${firstError.msg}`
+              : firstError.msg;
+          }
+        } else if (errorData.detail) {
+          // Simple string error
+          message = errorData.detail;
+        }
+      }
+      
+      // Ensure message is always a string, not an object
+      if (typeof message !== 'string') {
+        message = "Format de données invalide. Vérifiez vos informations.";
+      }
+      
       return { success: false, error: message };
     } finally {
       setLoading(false);

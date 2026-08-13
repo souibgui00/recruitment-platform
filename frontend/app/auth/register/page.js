@@ -62,7 +62,10 @@ export default function RegisterPage() {
             fontSize: '0.9rem',
             marginBottom: '1.5rem'
           }}>
-            {errorMsg}
+            <div style={{ fontWeight: '600', marginBottom: '0.5rem' }}>
+              ⚠️ Erreur lors de l'inscription
+            </div>
+            <div>{errorMsg}</div>
           </div>
         )}
 
@@ -82,7 +85,12 @@ export default function RegisterPage() {
 
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label className="form-label" htmlFor="email">Adresse Email</label>
+            <label className="form-label" htmlFor="email">
+              Adresse Email
+              <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginLeft: '0.5rem' }}>
+                *
+              </span>
+            </label>
             <input
               type="email"
               id="email"
@@ -92,10 +100,18 @@ export default function RegisterPage() {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginTop: '0.25rem' }}>
+              Ex: jean.dupont@email.com
+            </p>
           </div>
 
           <div className="form-group">
-            <label className="form-label" htmlFor="password">Mot de passe</label>
+            <label className="form-label" htmlFor="password">
+              Mot de passe
+              <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginLeft: '0.5rem' }}>
+                *
+              </span>
+            </label>
             <input
               type="password"
               id="password"
@@ -105,10 +121,18 @@ export default function RegisterPage() {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginTop: '0.25rem' }}>
+              Minimum 8 caractères
+            </p>
           </div>
 
           <div className="form-group" style={{ marginBottom: '2rem' }}>
-            <label className="form-label" htmlFor="confirmPassword">Confirmer le mot de passe</label>
+            <label className="form-label" htmlFor="confirmPassword">
+              Confirmer le mot de passe
+              <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginLeft: '0.5rem' }}>
+                *
+              </span>
+            </label>
             <input
               type="password"
               id="confirmPassword"
@@ -118,6 +142,9 @@ export default function RegisterPage() {
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
             />
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginTop: '0.25rem' }}>
+              Doit être identique au mot de passe ci-dessus
+            </p>
           </div>
 
           <button

@@ -11,14 +11,14 @@ class UserCreate(BaseModel):
     @classmethod
     def validate_email(cls, v: str) -> str:
         if not re.match(r'^[^@]+@[^@]+\.[^@]+$', v):
-            raise ValueError('Email invalide')
+            raise ValueError('Veuillez entrer une adresse email valide (ex: jean.dupont@email.com)')
         return v.lower()
 
     @field_validator('password')
     @classmethod
     def password_min_length(cls, v: str) -> str:
         if len(v) < 8:
-            raise ValueError('Le mot de passe doit contenir au moins 8 caractères')
+            raise ValueError('Le mot de passe doit contenir au moins 8 caractères pour votre sécurité')
         return v
 
 class UserResponse(BaseModel):

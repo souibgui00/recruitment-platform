@@ -46,13 +46,21 @@ export default function LoginPage() {
             fontSize: '0.9rem',
             marginBottom: '1.5rem'
           }}>
-            {errorMsg}
+            <div style={{ fontWeight: '600', marginBottom: '0.5rem' }}>
+              ⚠️ Erreur lors de la connexion
+            </div>
+            <div>{errorMsg}</div>
           </div>
         )}
 
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label className="form-label" htmlFor="email">Adresse Email</label>
+            <label className="form-label" htmlFor="email">
+              Adresse Email
+              <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginLeft: '0.5rem' }}>
+                *
+              </span>
+            </label>
             <input
               type="email"
               id="email"
@@ -62,10 +70,18 @@ export default function LoginPage() {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginTop: '0.25rem' }}>
+              Ex: jean.dupont@email.com
+            </p>
           </div>
 
           <div className="form-group" style={{ marginBottom: '2rem' }}>
-            <label className="form-label" htmlFor="password">Mot de passe</label>
+            <label className="form-label" htmlFor="password">
+              Mot de passe
+              <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginLeft: '0.5rem' }}>
+                *
+              </span>
+            </label>
             <input
               type="password"
               id="password"
@@ -75,6 +91,9 @@ export default function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginTop: '0.25rem' }}>
+              Le mot de passe que vous avez créé lors de l'inscription
+            </p>
           </div>
 
           <button
