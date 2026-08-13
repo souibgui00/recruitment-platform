@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
+import time
 
 from shared.database import get_db
 from user_management.models import User
@@ -9,6 +10,9 @@ from user_management.security import hash_password, verify_password, create_acce
 from user_management.dependencies import get_current_user
 
 router = APIRouter(prefix="/auth", tags=["auth"])
+
+# Simple in-memory rate limiting for login attempts
+login_attempts = {}
 
 @router.post("/register", response_model=UserResponse, status_code=status.HTTP_201_CREATED)
 def register(user_in: UserCreate, db: Session = Depends(get_db)):
@@ -31,6 +35,23 @@ def register(user_in: UserCreate, db: Session = Depends(get_db)):
 
 @router.post("/login", response_model=Token)
 def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
+    # Simple rate limiting: 5 attempts per minute per IP
+    client_ip = "client"  # In production, use request.client.host
+    current_time = time.time()
+    
+    # Clean old attempts (older than 1 minute)
+    login_attempts[client_ip] = [t for t in login_attempts.get(client_ip, []) if current_time - t < 60]
+    
+    # Check rate limit
+    if len(login_attempts.get(client_ip, [])) >= 5:
+        raise HTTPException(
+            status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+            detail="Trop de tentatives de connexion. Réessayez dans 1 minute."
+        )
+    
+    # Record this attempt
+    login_attempts.setdefault(client_ip, []).append(current_time)
+    
     # Authenticate user
     user = db.query(User).filter(User.email == form_data.username).first()
     if not user or not verify_password(form_data.password, user.hashed_password):
